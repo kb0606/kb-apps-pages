@@ -4,8 +4,9 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#ff7a00">
-  <meta name="description" content="ミタモンは、映画・漫画・ライブ・本・ゲームなど、観たもの・体験したことをまとめて記録できるアプリです。">
-  <title>ミタモン - 観たものを、ちゃんと自分の記録に。</title>
+  <meta name="description" content="ミタモンは、映画・漫画・ライブ・本・ゲームなど、楽しんだエンタメを一元管理して振り返れるアプリです。">
+  <title>ミタモン - 楽しんだエンタメを、あとから振り返る。</title>
+  <link rel="icon" href="../assets/common/app-icon.webp" type="image/webp">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -16,8 +17,9 @@
         <span>ミタモン</span>
       </a>
       <nav class="nav" aria-label="メインナビゲーション">
-        <a href="#features">特徴</a>
-        <a href="#highlight">振り返り</a>
+        <a href="#overview">振り返る</a>
+        <a href="#record">記録する</a>
+        <a href="#privacy">プライバシー</a>
         <a href="#premium">料金</a>
       </nav>
     </div>
@@ -28,155 +30,256 @@
       <div class="container hero-grid">
         <div class="hero-copy">
           <p class="eyebrow">Mita-Mon</p>
-          <h1>観たものを、<br><span>ちゃんと自分の記録に。</span></h1>
+          <h1><span class="hero-title-first">楽しんだエンタメを、</span><br><span>まとめて振り返ろう。</span></h1>
           <p class="hero-lead">
-            映画、漫画、本、ライブ、舞台、ゲーム、展示。<br>
-            ジャンルをまたいだエンタメの思い出を、ひとつの場所に残せます。
+            映画、漫画、本、ライブ、舞台、ゲーム、アート。<br>
+            ジャンルをまたいで楽しんだものをひとつにまとめ、自分だけのエンタメ履歴として残せます。
           </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#features">ミタモンを見る</a>
+            <a class="button button-primary" href="#overview">どんなふうに振り返れる？</a>
             <span class="availability">Android向け</span>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-glow"></div>
           <img
-            src="../assets/ja/feature-graphic.webp"
-            alt="ミタモン - 映画・漫画・ライブなどエンタメの思い出をまとめて記録しよう。"
-            width="1024"
-            height="500"
+            src="../assets/common/app-icon.webp"
+            alt="ミタモンのアプリアイコン"
+            width="500"
+            style="background-color: #ffffff;"
           >
         </div>
       </div>
     </section>
 
-    <section class="category-strip" aria-label="記録できるもの">
+    <section class="category-strip" aria-label="まとめて管理できるもの">
       <div class="container category-list">
-        <span>映画</span>
-        <span>アニメ</span>
-        <span>漫画</span>
-        <span>本</span>
-        <span>ゲーム</span>
-        <span>ライブ</span>
-        <span>舞台</span>
-        <span>スポーツ</span>
-        <span>展示</span>
-        <span>そのほかの体験</span>
+        <span>映画</span><span>アニメ</span><span>漫画</span><span>本</span><span>ゲーム</span>
+        <span>ライブ</span><span>舞台</span><span>スポーツ</span><span>アート</span><span>そのほかの体験</span>
       </div>
     </section>
 
-    <section class="section intro-section">
+    <section class="section intro-section" id="overview">
       <div class="container narrow">
-        <p class="section-kicker">ABOUT</p>
-        <h2>「何を観たか」を、<br>サービスごとに分けない。</h2>
+        <p class="section-kicker">LOOK BACK</p>
+        <h2>楽しんだエンタメをまとめて管理</h2>
         <p class="section-lead">
-          映画は映画アプリ、本は読書アプリ、ライブは予定表。
-          そうして散らばりがちな記録を、ミタモンならひとつにまとめられます。
-          作品の種類ではなく、<strong>あなたが見た・体験したもの</strong>を中心に残すアプリです。
+          「最近なに観たっけ？」「去年どんなライブに行った？」「好きな作品って何だっけ？」
+          ミタモンは、いろいろなジャンルの思い出をひとつに集めて、
+          <strong>あとから眺めて、探して、振り返るためのアプリ</strong>です。
         </p>
       </div>
     </section>
 
-    <section class="section features-section" id="features">
+    <section class="section app-flow-section">
       <div class="container">
         <div class="section-heading">
           <div>
-            <p class="section-kicker">FEATURES</p>
-            <h2>残す。整理する。振り返る。</h2>
+            <p class="section-kicker">ALL IN ONE</p>
+            <h2>思い出をまとめて振り返る。</h2>
           </div>
-          <p>記録するほど、自分だけのエンタメ履歴が育っていきます。</p>
+          <p>映画も本もライブも、<br>ひとつのタイムラインで見返せます。</p>
         </div>
 
-        <div class="feature-grid">
-          <article class="feature-card">
-            <div class="feature-number">01</div>
-            <div class="feature-icon" aria-hidden="true">✎</div>
-            <h3>ジャンルを問わず記録</h3>
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">記録一覧</span>
+            <h3>「何を楽しんできたか」<br>ひと目で分かる。</h3>
             <p>
-              タイトル、日付、評価、感想、場所などを記録。
-              映画からライブまで、同じ感覚で残せます。
+              記録した作品や体験は、ひとつの一覧にまとまります。
+              画像を中心に眺めたり、コンパクトに並べたり、見たい形に切り替えながら振り返れます。
             </p>
-          </article>
+            <ul class="feature-list">
+              <li>通常・コンパクト・サムネイル・画像グリッド表示</li>
+              <li>キーワード検索</li>
+              <li>日付・評価による並び替え</li>
+              <li>カテゴリ、タグ、アーティスト、同行者などで絞り込み</li>
+            </ul>
+          </div>
 
-          <article class="feature-card">
-            <div class="feature-number">02</div>
-            <div class="feature-icon" aria-hidden="true">⌕</div>
-            <h3>自分らしく整理</h3>
-            <p>
-              カテゴリ、タグ、アーティスト、同行者などで整理。
-              あとから探したい切り口を、自分で作れます。
-            </p>
-          </article>
+          <div class="capture-carousel" data-carousel aria-label="記録一覧の表示形式">
+            <div class="carousel-viewport" tabindex="0">
+              <div class="carousel-track">
+                <figure class="carousel-slide" data-label="サムネイル表示">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-thumbnail.webp" alt="ミタモンの記録一覧・サムネイル表示">
+                  </div>
+                  <figcaption>画像と情報のバランスよく一覧</figcaption>
+                </figure>
 
-          <article class="feature-card">
-            <div class="feature-number">03</div>
-            <div class="feature-icon" aria-hidden="true">↺</div>
-            <h3>何度でも振り返る</h3>
+                <figure class="carousel-slide" data-label="画像グリッド表示">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-grid.webp" alt="ミタモンの記録一覧・画像グリッド表示">
+                  </div>
+                  <figcaption>思い出を画像中心で眺める</figcaption>
+                </figure>
+
+                <figure class="carousel-slide" data-label="通常表示">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-normal.webp" alt="ミタモンの記録一覧・通常表示">
+                  </div>
+                  <figcaption>情報をしっかり見ながら振り返る</figcaption>
+                </figure>
+
+                <figure class="carousel-slide" data-label="コンパクト表示">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-compact.webp" alt="ミタモンの記録一覧・コンパクト表示">
+                  </div>
+                  <figcaption>たくさんの記録をすばやく眺める</figcaption>
+                </figure>
+
+              </div>
+
+              <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="前の表示形式">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="次の表示形式">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+
+            <div class="carousel-meta" aria-live="polite">
+              <strong class="carousel-current-label">通常表示</strong>
+            </div>
+
+            <div class="carousel-dots" role="group" aria-label="表示形式を選択">
+              <button type="button" class="carousel-dot is-active" aria-label="通常表示" aria-current="true"></button>
+              <button type="button" class="carousel-dot" aria-label="コンパクト表示"></button>
+              <button type="button" class="carousel-dot" aria-label="サムネイル表示"></button>
+              <button type="button" class="carousel-dot" aria-label="画像グリッド表示"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-step experience-step-reverse">
+          <div class="step-copy">
+            <span class="step-badge">詳細・カレンダー</span>
+            <h3>いつ観たか。どう感じたか。<br>記憶をいろいろな入口からたどる。</h3>
             <p>
-              タイムラインやカレンダー、ハイライトから、
-              過去の思い出をいろいろな角度で見返せます。
+              気になる記録を開けば、当時の評価や感想、画像などを確認できます。
+              日付から思い出したいときは、カレンダーから過去の記録をたどれます。
             </p>
-          </article>
+            <ul class="feature-list">
+              <li>作品・体験ごとの詳細表示</li>
+              <li>同じ作品を何度観たか、鑑賞履歴をまとめて確認</li>
+              <li>カレンダーから振り返り</li>
+              <li>同じタグやアーティストの記録を一覧表示</li>
+            </ul>
+          </div>
+
+          <div class="capture-pair">
+            <figure class="capture-block capture-block-small">
+              <div class="phone-frame">
+                <div class="phone-speaker"></div>
+                <img class="capture-image" src="../assets/ja/screens/detail.webp" alt="ミタモンの記録詳細画面">
+              </div>
+              <figcaption>感想や評価までまとめて確認</figcaption>
+            </figure>
+            <figure class="capture-block capture-block-small capture-lift">
+              <div class="phone-frame">
+                <div class="phone-speaker"></div>
+                <img class="capture-image" src="../assets/ja/screens/calendar.webp" alt="ミタモンのカレンダー画面">
+              </div>
+              <figcaption>日付から思い出をたどる</figcaption>
+            </figure>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="section highlight-section" id="highlight">
-      <div class="container highlight-grid">
+      <div class="container highlight-showcase">
         <div class="highlight-copy">
-          <p class="section-kicker section-kicker-light">HIGHLIGHT</p>
+          <p class="section-kicker section-kicker-light">HIGHLIGHTS</p>
           <h2>記録が増えるほど、<br>自分の「好き」が見えてくる。</h2>
           <p>
-            よく観たカテゴリ、よく使ったタグ、アーティスト、同行者、
-            何度も観た作品などをハイライトで振り返れます。
+            ハイライトでは、記録件数や高評価作品だけでなく、よく観たカテゴリ、タグ、
+            アーティスト、同行者、何度も観た作品などをまとめて確認できます。
+            「自分はこんなものを楽しんできたんだ」と振り返れる画面です。
           </p>
+          <div class="highlight-tags">
+            <span>記録件数</span><span>高評価作品</span><span>カテゴリ</span><span>タグ</span>
+            <span>アーティスト</span><span>同行者</span><span>何度も観たもの</span>
+          </div>
         </div>
-        <div class="stat-stack" aria-label="ハイライトで振り返れる項目">
-          <div class="stat-card stat-card-main">
-            <span class="stat-label">よく観たカテゴリ</span>
-            <strong>映画</strong>
-            <span class="stat-meta">あなたの記録から自動集計</span>
+
+        <figure class="capture-block capture-highlight">
+          <div class="phone-frame phone-frame-light">
+            <div class="phone-speaker"></div>
+            <img class="capture-image" src="../assets/ja/screens/highlight.webp" alt="ミタモンのハイライト画面">
           </div>
-          <div class="stat-card">
-            <span class="stat-label">何度も観たもの</span>
-            <strong>また出会えた作品</strong>
+          <!-- <figcaption>実データが入ったハイライト画面を掲載</figcaption> -->
+        </figure>
+      </div>
+    </section>
+
+    <section class="section app-flow-section" id="record">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">EASY TO RECORD</p>
+            <h2>記録もできるだけ簡単に。</h2>
           </div>
-          <div class="stat-card">
-            <span class="stat-label">一緒に観た人</span>
-            <strong>思い出を、人からも振り返る</strong>
+          <p>必要最低限ならタイトルと日付から。残したいときだけ、感想や評価などを追加できます。</p>
+        </div>
+
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">新規記録</span>
+            <h3>さっと残す。<br>詳しく残す。どちらでも。</h3>
+            <p>
+              毎回たくさん入力する必要はありません。<br>
+              あとで振り返るために必要な情報だけ、自分のペースで残せます。
+            </p>
+            <ul class="feature-list">
+              <li>鑑賞日・体験日。期間での記録にも対応</li>
+              <li>5段階評価、感想・メモ、場所</li>
+              <li>カテゴリ、タグ、アーティスト、同行者</li>
+              <li>カテゴリは自分に合わせてカスタマイズ可能</li>
+              <li>過去に観た作品なら、鑑賞日だけの記録も可能</li>
+            </ul>
+            <div class="tip-card">
+              <strong>URLから入力を補助。</strong>
+              <span>関連ページのURLを入力すると、ページタイトルや画像などを取得して記録を補助します。</span>
+            </div>
           </div>
+
+          <figure class="capture-block">
+            <div class="phone-frame">
+              <div class="phone-speaker"></div>
+              <img class="capture-image" src="../assets/ja/screens/record-form.webp" alt="ミタモンの新規記録画面">
+            </div>
+            <!-- <figcaption>実際の入力画面を掲載</figcaption> -->
+          </figure>
         </div>
       </div>
     </section>
 
-    <section class="section ownership-section">
+    <section class="section ownership-section" id="privacy">
       <div class="container ownership-grid">
         <div class="icon-stage">
           <div class="icon-ring"></div>
-          <img src="../assets/common/app-icon.webp" alt="ミタモンのアプリアイコン" width="512" height="512">
+          <img src="../assets/common/privacy-icon.webp" alt="プライバシーアイコン" width="512">
         </div>
         <div class="ownership-copy">
-          <p class="section-kicker">YOUR DATA</p>
-          <h2>あなたの記録は、<br>あなたのもの。</h2>
+          <p class="section-kicker">PRIVACY & YOUR DATA</p>
+          <h2>記録は、<br>あなたの端末の中に。</h2>
           <p>
-            ミタモンの主要な記録データは、原則として端末内に保存します。
-            アカウント登録は不要。バックアップファイルとして書き出して、
-            自分で保管することもできます。
+            ミタモンの記録データは、原則として端末内に保存します。
+            アカウント登録は不要で、提供者のサーバーへ鑑賞記録や感想を保存する仕組みもありません。
           </p>
           <div class="mini-points">
-            <div>
-              <strong>ローカル保存</strong>
-              <span>主要な記録は端末内へ</span>
-            </div>
-            <div>
-              <strong>アカウント不要</strong>
-              <span>まず記録するところから始められる</span>
-            </div>
-            <div>
-              <strong>バックアップ</strong>
-              <span>ZIPファイルとして書き出し可能</span>
-            </div>
+            <div><strong>ローカル保存</strong><span>主要な記録は端末内へ</span></div>
+            <div><strong>アカウント不要</strong><span>個人アカウントの作成なし</span></div>
+            <div><strong>広告・追跡なし</strong><span>現在、広告や広告目的の行動追跡なし</span></div>
           </div>
+          <p>
+            必要に応じて、記録と画像をバックアップファイルとして書き出し、自分で保管することもできます。
+          </p>
         </div>
       </div>
     </section>
@@ -185,21 +288,19 @@
       <div class="container">
         <div class="section-heading centered-heading">
           <div>
-            <p class="section-kicker">PREMIUM</p>
-            <h2>まずは無料で。<br>気に入ったら、ずっと記録。</h2>
+            <p class="section-kicker">ONE-TIME PURCHASE</p>
+            <h2>20件まではお試し。<br>その先は、買い切りで。</h2>
           </div>
-          <p>Android版は20件まで無料。Premiumは買い切りで記録数の制限を解除します。</p>
+          <p>Android版は20件まで無料でお試しいただけます。<br>Premiumは買い切りで、記録数の制限を解除します。</p>
         </div>
 
         <div class="plan-grid">
           <article class="plan-card">
             <span class="plan-name">FREE</span>
             <h3>無料版</h3>
-            <p class="plan-main">20件まで記録</p>
+            <p class="plan-main">20件まで記録可能</p>
             <ul>
-              <li>基本的な記録・閲覧機能</li>
-              <li>タグやカテゴリで整理</li>
-              <li>バックアップ・復元</li>
+              <li>機能はPremiumと同等</li>
             </ul>
           </article>
 
@@ -209,11 +310,8 @@
             <h3>Premium</h3>
             <p class="plan-main">記録数の制限なし</p>
             <ul>
-              <li>通常の新規記録を無制限に</li>
-              <li>毎月のサブスクリプションなし</li>
-              <li>Google Playの購入状態から復元</li>
+              <li>一度の購入でずっと使える</li>
             </ul>
-            <p class="plan-note">価格はGoogle Play上で表示されます。</p>
           </article>
         </div>
       </div>
@@ -221,11 +319,11 @@
 
     <section class="section final-cta">
       <div class="container cta-box">
-        <img src="../assets/common/app-icon.webp" alt="" width="112" height="112">
+        <img src="../assets/common/app-icon.webp" alt="" width="112" height="112" style="background-color: #ffffff;">
         <div>
           <p class="section-kicker">Mita-Mon</p>
-          <h2>見たもの・体験したことを、<br>あなただけの1冊に。</h2>
-          <p>今日の「観た」を、あとから振り返れる思い出に残しましょう。</p>
+          <h2>ミタモン ~ 自分だけのエンタメ履歴</h2>
+          <p>映画も本もライブも。ジャンルを越えて、あなたが楽しんできたものを振り返ってみませんか。</p>
         </div>
         <span class="cta-status">Google Play / Android</span>
       </div>
@@ -246,5 +344,69 @@
       <p>© kb apps</p>
     </div>
   </footer>
+
+  <script>
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('.carousel-track');
+      const slides = [...carousel.querySelectorAll('.carousel-slide')];
+      const dots = [...carousel.querySelectorAll('.carousel-dot')];
+      const label = carousel.querySelector('.carousel-current-label');
+      const viewport = carousel.querySelector('.carousel-viewport');
+      let index = 0;
+      let touchStartX = null;
+
+      const show = (nextIndex) => {
+        index = (nextIndex + slides.length) % slides.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+
+        slides.forEach((slide, slideIndex) => {
+          slide.setAttribute('aria-hidden', slideIndex === index ? 'false' : 'true');
+        });
+
+        dots.forEach((dot, dotIndex) => {
+          const active = dotIndex === index;
+          dot.classList.toggle('is-active', active);
+          if (active) {
+            dot.setAttribute('aria-current', 'true');
+          } else {
+            dot.removeAttribute('aria-current');
+          }
+        });
+
+        label.textContent = slides[index].dataset.label;
+      };
+
+      carousel.querySelector('.carousel-arrow-prev').addEventListener('click', () => show(index - 1));
+      carousel.querySelector('.carousel-arrow-next').addEventListener('click', () => show(index + 1));
+
+      dots.forEach((dot, dotIndex) => {
+        dot.addEventListener('click', () => show(dotIndex));
+      });
+
+      viewport.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          show(index - 1);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          show(index + 1);
+        }
+      });
+
+      viewport.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+      }, { passive: true });
+
+      viewport.addEventListener('touchend', (event) => {
+        if (touchStartX === null) return;
+        const delta = event.changedTouches[0].clientX - touchStartX;
+        touchStartX = null;
+        if (Math.abs(delta) < 45) return;
+        show(index + (delta < 0 ? 1 : -1));
+      }, { passive: true });
+
+      show(0);
+    });
+  </script>
 </body>
 </html>
