@@ -1126,7 +1126,7 @@ a {
     #fff;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px), (pointer: coarse) {
   .experience-step,
   .highlight-showcase {
     grid-template-columns: 1fr;
