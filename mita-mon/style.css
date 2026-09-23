@@ -1318,3 +1318,27 @@ a {
     transition: none;
   }
 }
+
+
+/* Real app screenshots */
+.capture-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 29px;
+  background: #fff;
+}
+
+.capture-pair .capture-image {
+  border-radius: 23px;
+}
+
+.carousel-slide .capture-image {
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .capture-pair .capture-image {
+    border-radius: 18px;
+  }
+}
