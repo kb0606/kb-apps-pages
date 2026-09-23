@@ -16,34 +16,43 @@
         if (!lang) return;
         const normalized = lang.toLowerCase();
         const base = normalized.split("-")[0];
+
         for (const value of [normalized, base]) {
-          if (value && !seen.has(value)) {
+          if (value && value !== "en" && !seen.has(value)) {
             seen.add(value);
             candidates.push(value);
           }
         }
       };
 
-      for (const lang of navigator.languages || [navigator.language]) add(lang);
-      add("en");
-      add("ja");
+      for (const lang of navigator.languages || [navigator.language]) {
+        add(lang);
+      }
 
       for (const lang of candidates) {
         const target = `./${lang}/`;
+
         try {
-          const response = await fetch(target, { method: "HEAD", cache: "no-store" });
+          const response = await fetch(target, {
+            method: "HEAD",
+            cache: "no-store",
+          });
+
           if (response.ok) {
             location.replace(target);
             return;
           }
         } catch (_) {
-          // Try the next language.
+          // Try the next browser language.
         }
       }
 
-      document.body.textContent = "No supported language page is available.";
+      // English is the default language for unsupported or unavailable locales.
+      location.replace("./en/");
     })();
   </script>
-  <noscript>JavaScript is required to select a language.</noscript>
+  <noscript>
+    <p><a href="./en/">Continue in English</a></p>
+  </noscript>
 </body>
 </html>
