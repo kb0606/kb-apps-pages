@@ -141,14 +141,14 @@
             </div>
 
             <div class="carousel-meta" aria-live="polite">
-              <strong class="carousel-current-label">通常表示</strong>
+              <strong class="carousel-current-label">サムネイル表示</strong>
             </div>
 
             <div class="carousel-dots" role="group" aria-label="表示形式を選択">
-              <button type="button" class="carousel-dot is-active" aria-label="通常表示" aria-current="true"></button>
-              <button type="button" class="carousel-dot" aria-label="コンパクト表示"></button>
-              <button type="button" class="carousel-dot" aria-label="サムネイル表示"></button>
+              <button type="button" class="carousel-dot is-active" aria-label="サムネイル表示" aria-current="true"></button>
               <button type="button" class="carousel-dot" aria-label="画像グリッド表示"></button>
+              <button type="button" class="carousel-dot" aria-label="通常表示"></button>
+              <button type="button" class="carousel-dot" aria-label="コンパクト表示"></button>
             </div>
           </div>
         </div>
@@ -356,9 +356,23 @@
       let index = 0;
       let touchStartX = null;
 
+      const updateTrackPosition = () => {
+        const firstSlideLeft = slides[0].getBoundingClientRect().left;
+        const activeSlideLeft = slides[index].getBoundingClientRect().left;
+        track.style.transform = `translateX(-${activeSlideLeft - firstSlideLeft}px)`;
+      };
+
+      const repositionTrack = () => {
+        const previousTransition = track.style.transition;
+        track.style.transition = 'none';
+        updateTrackPosition();
+        track.getBoundingClientRect();
+        track.style.transition = previousTransition;
+      };
+
       const show = (nextIndex) => {
         index = (nextIndex + slides.length) % slides.length;
-        track.style.transform = `translateX(-${index * 100}%)`;
+        updateTrackPosition();
 
         slides.forEach((slide, slideIndex) => {
           slide.setAttribute('aria-hidden', slideIndex === index ? 'false' : 'true');
@@ -405,6 +419,8 @@
         if (Math.abs(delta) < 45) return;
         show(index + (delta < 0 ? 1 : -1));
       }, { passive: true });
+
+      window.addEventListener('resize', repositionTrack, { passive: true });
 
       show(0);
     });
