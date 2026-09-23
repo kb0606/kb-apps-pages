@@ -90,3 +90,11 @@ out/
 
 tmp/
 temp/
+
+# ============================================================
+# Private project context
+# ============================================================
+
+# Local-only design rationale / AI handoff context.
+# May exist at the repository root or inside app directories.
+**/PRIVATE_CONTEXT.md
