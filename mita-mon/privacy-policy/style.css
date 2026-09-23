@@ -1,6 +1,6 @@
 :root {
-  color-scheme: light dark;
-  --bg: #f7f7f5;
+  color-scheme: light;
+  --bg: #ffffff;
   --surface: #ffffff;
   --text: #202124;
   --muted: #6b7280;
@@ -70,16 +70,5 @@ a { color: var(--accent); }
     padding: 28px 20px 48px;
     border: 0;
     border-radius: 0;
-  }
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111315;
-    --surface: #181a1d;
-    --text: #f3f4f6;
-    --muted: #a1a1aa;
-    --border: #2d3136;
-    --accent: #f59e0b;
   }
 }

@@ -24,7 +24,8 @@ mita-mon/
 ├─ style.css
 ├─ assets/
 │  ├─ common/
-│  │  └─ app-icon.webp
+│  │  ├─ app-icon.webp
+│  │  └─ privacy-icon.webp
 │  └─ ja/
 │     ├─ feature-graphic.webp
 │     └─ screens/
@@ -37,6 +38,8 @@ mita-mon/
 │        ├─ calendar.webp
 │        └─ highlight.webp
 ├─ ja/
+│  └─ index.html
+├─ en/
 │  └─ index.html
 ├─ privacy-policy/
 │  ├─ index.html
@@ -54,7 +57,7 @@ mita-mon/
       └─ index.html
 ```
 
-今後、紹介ページにも英語などを追加する場合は、次のように言語ディレクトリを追加します。
+今後、紹介ページにほかの言語を追加する場合も、言語コードのディレクトリを追加します。
 
 ```text
 mita-mon/
@@ -78,7 +81,7 @@ mita-mon/
 3. 対応する言語ディレクトリが存在すればそのページへ移動
 4. 対応言語がなければ `./en/` へ移動
 
-プライバシーポリシーと利用規約ではこの方式を使用しています。
+`mita-mon` の紹介ページ、プライバシーポリシー、利用規約でこの方式を使用しています。
 
 ## 紹介ページのスクリーンショット
 
@@ -96,6 +99,7 @@ mita-mon/
 | `highlight.webp` | ハイライト |
 
 記録一覧の4種類は、紹介ページ上でカルーセル表示します。
+英語紹介ページでも現在は同じ日本語版スクリーンショットを使っています。
 
 ## Git LFS と GitHub Pages
 
@@ -121,4 +125,4 @@ Git LFS のポインタファイルをそのまま GitHub Pages から参照す�
 /mita-mon/terms/ja/
 ```
 
-英語ページを追加した場合も同様に `/en/` 同士をリンクします。
+英語ページは `/mita-mon/en/` から `/mita-mon/privacy-policy/en/` と `/mita-mon/terms/en/` にリンクします。紹介ページのフッターから日本語・英語を切り替えられます。

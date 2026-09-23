@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff7a00">
+  <meta name="description" content="Mita-Mon brings your entertainment memories together—from movies, manga, and books to concerts, games, and more.">
+  <title>Mita-Mon — Your entertainment, all in one place</title>
+  <link rel="icon" href="../assets/common/app-icon.webp" type="image/webp">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Mita-Mon home">
+        <img src="../assets/common/app-icon.webp" alt="" width="42" height="42">
+        <span>Mita-Mon</span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#overview">Overview</a>
+        <a href="#record">Record</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#premium">Pricing</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Mita-Mon</p>
+          <h1><span class="hero-title-first">Your entertainment,</span><br><span>all in one place.</span></h1>
+          <p class="hero-lead">
+            Movies, manga, books, concerts, theater, games, exhibitions, and more.<br>
+            Keep everything you enjoy together in one personal history.
+          </p>
+          <div class="hero-actions">
+            <span class="availability">Available on Android</span>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-glow"></div>
+          <img
+            src="../assets/common/app-icon.webp"
+            alt="Mita-Mon app icon"
+            width="500"
+            style="background-color: #ffffff;"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="category-strip" aria-label="Things you can keep track of">
+      <div class="container category-list">
+        <span>Movies</span><span>Anime</span><span>Manga</span><span>Books</span><span>Games</span>
+        <span>Concerts</span><span>Theater</span><span>Sports</span><span>Exhibitions</span><span>More experiences</span>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="overview">
+      <div class="container narrow">
+        <p class="section-kicker">LOOK BACK</p>
+        <h2>Keep your entertainment in one place</h2>
+        <p class="section-lead">
+          “What did I watch recently?” “Which concerts did I go to last year?” “What are some of my all-time favorites?”
+          Mita-Mon brings memories from different genres together in
+          <strong>one app for browsing, finding, and looking back on what you love.</strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="section app-flow-section">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">ALL IN ONE</p>
+            <h2>All your memories, in one timeline.</h2>
+          </div>
+        </div>
+
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">Your timeline</span>
+            <h3>See everything<br>you've enjoyed at a glance.</h3>
+            <p>
+              Your movies, books, and live events come together in one list.
+              Browse with images, switch to a compact layout, and choose the view that works for you.
+            </p>
+            <ul class="feature-list">
+              <li>Standard, compact, thumbnail, and image-grid views</li>
+              <li>Search by keyword</li>
+              <li>Sort by date or rating</li>
+              <li>Filter by category, tag, artist, companion, and more</li>
+            </ul>
+          </div>
+
+          <div class="capture-carousel" data-carousel aria-label="Timeline display options">
+            <div class="carousel-viewport" tabindex="0">
+              <div class="carousel-track">
+                <figure class="carousel-slide" data-label="Thumbnail view">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-thumbnail.webp" alt="Mita-Mon timeline in thumbnail view">
+                  </div>
+                  <figcaption>A balanced view of images and details</figcaption>
+                </figure>
+
+                <figure class="carousel-slide" data-label="Image grid">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-grid.webp" alt="Mita-Mon timeline in image-grid view">
+                  </div>
+                  <figcaption>Browse memories through their images</figcaption>
+                </figure>
+
+                <figure class="carousel-slide" data-label="Standard list">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-normal.webp" alt="Mita-Mon timeline in standard list view">
+                  </div>
+                  <figcaption>See more details as you look back</figcaption>
+                </figure>
+
+                <figure class="carousel-slide" data-label="Compact list">
+                  <div class="phone-frame">
+                    <div class="phone-speaker"></div>
+                    <img class="capture-image" src="../assets/ja/screens/timeline-compact.webp" alt="Mita-Mon timeline in compact list view">
+                  </div>
+                  <figcaption>Scan more entries at a glance</figcaption>
+                </figure>
+
+              </div>
+
+              <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous timeline view">
+                <span aria-hidden="true">‹</span>
+              </button>
+              <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next timeline view">
+                <span aria-hidden="true">›</span>
+              </button>
+            </div>
+
+            <div class="carousel-meta" aria-live="polite">
+              <strong class="carousel-current-label">Thumbnail view</strong>
+            </div>
+
+            <div class="carousel-dots" role="group" aria-label="Choose a timeline view">
+              <button type="button" class="carousel-dot is-active" aria-label="Thumbnail view" aria-current="true"></button>
+              <button type="button" class="carousel-dot" aria-label="Image grid"></button>
+              <button type="button" class="carousel-dot" aria-label="Standard list"></button>
+              <button type="button" class="carousel-dot" aria-label="Compact list"></button>
+            </div>
+          </div>
+        </div>
+
+        <div class="experience-step experience-step-reverse">
+          <div class="step-copy">
+            <span class="step-badge">Details & calendar</span>
+            <h3>When was it? How did it feel?<br>Find memories your way.</h3>
+            <p>
+              Open any entry to revisit your rating, notes, and photos.
+              Browse the calendar when you want to find memories by date.
+            </p>
+            <ul class="feature-list">
+              <li>Open a detail page for each work or experience</li>
+              <li>See all entries with the same tag or artist</li>
+              <li>Keep track of repeat viewings of the same work</li>
+              <li>Save photos, notes, and links to websites</li>
+              <li>Revisit past entries from the calendar</li>
+            </ul>
+          </div>
+
+          <div class="capture-pair">
+            <figure class="capture-block capture-block-small">
+              <div class="phone-frame">
+                <div class="phone-speaker"></div>
+                <img class="capture-image" src="../assets/ja/screens/detail.webp" alt="Mita-Mon entry details">
+              </div>
+              <figcaption>Revisit your notes and ratings</figcaption>
+            </figure>
+            <figure class="capture-block capture-block-small capture-lift">
+              <div class="phone-frame">
+                <div class="phone-speaker"></div>
+                <img class="capture-image" src="../assets/ja/screens/calendar.webp" alt="Mita-Mon calendar view">
+              </div>
+              <figcaption>Find memories by date</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section highlight-section" id="highlight">
+      <div class="container highlight-showcase">
+        <div class="highlight-copy">
+          <p class="section-kicker section-kicker-light">HIGHLIGHTS</p>
+          <h2>The more you save,<br>the more you see what you love.</h2>
+          <p>
+            See your total entries and top-rated picks, along with your favorite categories, tags,
+            artists, companions, and most revisited works—all in one place.
+          </p>
+          <div class="highlight-tags">
+            <span>Entry count</span><span>Top-rated works</span><span>Categories</span><span>Tags</span>
+            <span>Artists</span><span>Companions</span><span>Most revisited</span>
+          </div>
+        </div>
+
+        <figure class="capture-block capture-highlight">
+          <div class="phone-frame phone-frame-light">
+            <div class="phone-speaker"></div>
+            <img class="capture-image" src="../assets/ja/screens/highlight.webp" alt="Mita-Mon highlights screen">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section app-flow-section" id="record">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">EASY TO RECORD</p>
+            <h2>Easy to record, your way.</h2>
+          </div>
+        </div>
+
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">New entry</span>
+            <h3>Make a quick note.<br>Add more detail when you want.</h3>
+            <p>
+              You don't need to fill in everything every time.
+              Start with the essentials, then add more whenever you like.
+            </p>
+            <ul class="feature-list">
+              <li>Record a single date or a date range</li>
+              <li>Add categories, tags, artists, and companions</li>
+              <li>Customize categories to fit the way you use the app</li>
+              <li>Add a five-star rating, review, notes, and location</li>
+              <li>Log another viewing of a work you've already recorded</li>
+            </ul>
+            <div class="tip-card">
+              <strong>Start from a URL</strong>
+              <span>Enter a related web page URL to retrieve its title and image and help fill in a new entry.</span>
+            </div>
+          </div>
+
+          <figure class="capture-block">
+            <div class="phone-frame">
+              <div class="phone-speaker"></div>
+              <img class="capture-image" src="../assets/ja/screens/record-form.webp" alt="Mita-Mon new-entry form">
+            </div>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ownership-section" id="privacy">
+      <div class="container ownership-grid">
+        <div class="icon-stage">
+          <div class="icon-ring"></div>
+          <img src="../assets/common/privacy-icon.webp" alt="Privacy and on-device storage illustration" width="512">
+        </div>
+        <div class="ownership-copy">
+          <p class="section-kicker">PRIVACY & YOUR DATA</p>
+          <h2>Your memories stay<br>on your device.</h2>
+          <p>
+            Your records are stored on your device. No account is required, and Mita-Mon does not store your viewing history or notes on the provider's servers.
+          </p>
+          <div class="mini-points">
+            <div><strong>Stored locally</strong><span>Your records stay on your device</span></div>
+            <div><strong>No account needed</strong><span>Start without signing up</span></div>
+            <div><strong>No ads or ad tracking</strong><span>No advertising or ad-related tracking at this time</span></div>
+          </div>
+          <p>
+            You can export your records and images to a backup file and keep it somewhere safe.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section premium-section" id="premium">
+      <div class="container">
+        <div class="section-heading centered-heading">
+          <div>
+            <p class="section-kicker">ONE-TIME PURCHASE</p>
+            <h2>Try it free for 20 entries.<br>Upgrade once when you're ready.</h2>
+          </div>
+          <p>The Android app is free for up to 20 entries.<br>Premium is a one-time purchase that removes the entry limit.</p>
+        </div>
+
+        <div class="plan-grid">
+          <article class="plan-card">
+            <span class="plan-name">FREE</span>
+            <h3>Free</h3>
+            <p class="plan-main">Up to 20 entries</p>
+            <ul>
+              <li>All core features included</li>
+            </ul>
+          </article>
+
+          <article class="plan-card plan-card-premium">
+            <span class="plan-badge">One-time purchase</span>
+            <span class="plan-name">PREMIUM</span>
+            <h3>Premium</h3>
+            <p class="plan-main">Unlimited entries</p>
+            <ul>
+              <li>Pay once, use without a subscription</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section final-cta">
+      <div class="container cta-box">
+        <img src="../assets/common/app-icon.webp" alt="" width="112" height="112" style="background-color: #ffffff;">
+        <div>
+          <p class="section-kicker">Mita-Mon</p>
+          <h2>Mita-Mon — Your personal entertainment history</h2>
+          <p>Movies, books, concerts, and more. Bring everything you enjoy together and look back anytime.</p>
+        </div>
+        <span class="cta-status">
+          <a href="https://play.google.com/store/apps/details?id=com.mita_mon.app" target="_blank" rel="noopener noreferrer">Google Play / Android</a>
+        </span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/common/app-icon.webp" alt="" width="36" height="36">
+        <span>Mita-Mon</span>
+      </div>
+      <div class="footer-links">
+        <a href="../privacy-policy/en/">Privacy Policy</a>
+        <a href="../terms/en/">Terms of Use</a>
+        <a href="mailto:support.ytmp@gmail.com">Contact</a>
+        <a href="../ja/" lang="ja">日本語</a>
+      </div>
+      <p>© kb apps</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelectorAll('[data-carousel]').forEach((carousel) => {
+      const track = carousel.querySelector('.carousel-track');
+      const slides = [...carousel.querySelectorAll('.carousel-slide')];
+      const dots = [...carousel.querySelectorAll('.carousel-dot')];
+      const label = carousel.querySelector('.carousel-current-label');
+      const viewport = carousel.querySelector('.carousel-viewport');
+      let index = 0;
+      let touchStartX = null;
+
+      const show = (nextIndex) => {
+        index = (nextIndex + slides.length) % slides.length;
+        track.style.transform = `translateX(-${index * 100}%)`;
+
+        slides.forEach((slide, slideIndex) => {
+          slide.setAttribute('aria-hidden', slideIndex === index ? 'false' : 'true');
+        });
+
+        dots.forEach((dot, dotIndex) => {
+          const active = dotIndex === index;
+          dot.classList.toggle('is-active', active);
+          if (active) {
+            dot.setAttribute('aria-current', 'true');
+          } else {
+            dot.removeAttribute('aria-current');
+          }
+        });
+
+        label.textContent = slides[index].dataset.label;
+      };
+
+      carousel.querySelector('.carousel-arrow-prev').addEventListener('click', () => show(index - 1));
+      carousel.querySelector('.carousel-arrow-next').addEventListener('click', () => show(index + 1));
+
+      dots.forEach((dot, dotIndex) => {
+        dot.addEventListener('click', () => show(dotIndex));
+      });
+
+      viewport.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault();
+          show(index - 1);
+        } else if (event.key === 'ArrowRight') {
+          event.preventDefault();
+          show(index + 1);
+        }
+      });
+
+      viewport.addEventListener('touchstart', (event) => {
+        touchStartX = event.changedTouches[0].clientX;
+      }, { passive: true });
+
+      viewport.addEventListener('touchend', (event) => {
+        if (touchStartX === null) return;
+        const delta = event.changedTouches[0].clientX - touchStartX;
+        touchStartX = null;
+        if (Math.abs(delta) < 45) return;
+        show(index + (delta < 0 ? 1 : -1));
+      }, { passive: true });
+
+      show(0);
+    });
+  </script>
+</body>
+</html>
