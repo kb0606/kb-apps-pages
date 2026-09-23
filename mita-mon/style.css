@@ -120,9 +120,9 @@ a {
   position: relative;
   z-index: 1;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: 1.3fr 0.7fr;
   align-items: center;
-  gap: 54px;
+  gap: 40px;
 }
 
 .eyebrow,
@@ -136,9 +136,15 @@ a {
 
 .hero h1 {
   margin: 0;
-  font-size: clamp(2.5rem, 5vw, 4.9rem);
+  font-size: clamp(2.5rem, 4.5vw, 4.4rem);
   line-height: 1.15;
   letter-spacing: -0.045em;
+}
+
+.hero h1 .hero-title-first {
+  display: inline-block;
+  color: var(--ink);
+  white-space: nowrap;
 }
 
 .hero h1 span {
@@ -184,6 +190,8 @@ a {
 
 .hero-visual {
   position: relative;
+  display: flex;
+  justify-content: center;
   padding: 18px;
 }
 
@@ -198,7 +206,7 @@ a {
 .hero-visual img {
   position: relative;
   z-index: 1;
-  width: 100%;
+  width: min(100%, 340px);
   border: 1px solid rgba(255, 122, 0, 0.1);
   border-radius: 30px;
   box-shadow: var(--shadow);
@@ -228,7 +236,7 @@ a {
 }
 
 .section {
-  padding: 108px 0;
+  padding: 60px 0;
 }
 
 .intro-section {
@@ -335,8 +343,12 @@ a {
 .highlight-section {
   color: #fff;
   background:
-    radial-gradient(circle at 85% 10%, rgba(255, 211, 153, 0.26), transparent 30%),
-    linear-gradient(135deg, #ff8400 0%, #f26700 100%);
+    radial-gradient(circle at 85% 10%, rgba(255, 163, 51, 0.24), transparent 30%),
+    linear-gradient(135deg, #fdb57d 0%, #e57f4d 100%);
+}
+
+.section.highlight-section {
+  padding-bottom: 24px;
 }
 
 .highlight-grid {
@@ -402,6 +414,10 @@ a {
 
 .ownership-section {
   background: #fff;
+}
+
+.section.ownership-section {
+  padding-top: 36px;
 }
 
 .ownership-grid {
@@ -680,7 +696,7 @@ a {
   }
 
   .hero-visual {
-    max-width: 760px;
+    max-width: 380px;
     margin-inline: auto;
   }
 
@@ -760,7 +776,7 @@ a {
   }
 
   .hero h1 {
-    font-size: clamp(2.35rem, 12vw, 3.55rem);
+    font-size: clamp(1.8rem, 9.1vw, 3.1rem);
   }
 
   .hero-lead br {
@@ -773,6 +789,7 @@ a {
   }
 
   .hero-visual {
+    max-width: 240px;
     padding: 4px;
   }
 
@@ -797,7 +814,11 @@ a {
   }
 
   .section {
-    padding: 78px 0;
+    padding: 50px 0;
+  }
+
+  .section.ownership-section {
+    padding-top: 32px;
   }
 
   .intro-section h2,
