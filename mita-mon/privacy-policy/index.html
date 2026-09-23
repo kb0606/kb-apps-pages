@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Redirecting…</title>
+</head>
+<body>
+  <script>
+    (async () => {
+      const seen = new Set();
+      const candidates = [];
+
+      const add = (lang) => {
+        if (!lang) return;
+        const normalized = lang.toLowerCase();
+        const base = normalized.split("-")[0];
+        for (const value of [normalized, base]) {
+          if (value && !seen.has(value)) {
+            seen.add(value);
+            candidates.push(value);
+          }
+        }
+      };
+
+      for (const lang of navigator.languages || [navigator.language]) add(lang);
+      add("en");
+      add("ja");
+
+      for (const lang of candidates) {
+        const target = `./${lang}/`;
+        try {
+          const response = await fetch(target, { method: "HEAD", cache: "no-store" });
+          if (response.ok) {
+            location.replace(target);
+            return;
+          }
+        } catch (_) {
+          // Try the next language.
+        }
+      }
+
+      document.body.textContent = "No supported language page is available.";
+    })();
+  </script>
+  <noscript>JavaScript is required to select a language.</noscript>
+</body>
+</html>
