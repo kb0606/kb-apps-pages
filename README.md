@@ -57,6 +57,21 @@ mita-mon/
       └─ index.html
 ```
 
+`tile-trails` のメインページは次の構成です。プライバシーポリシーと利用規約のページは、内容が用意できた段階で追加します。
+
+```text
+tile-trails/
+├─ index.html
+├─ style.css
+├─ assets/
+│  └─ common/
+│     └─ app-icon.svg
+├─ ja/
+│  └─ index.html
+└─ en/
+   └─ index.html
+```
+
 今後、紹介ページにほかの言語を追加する場合も、言語コードのディレクトリを追加します。
 
 ```text

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Tile Trails — Language selection</title>
+</head>
+<body>
+  <script>
+    (() => {
+      const languages = navigator.languages?.length
+        ? navigator.languages
+        : [navigator.language || ""];
+
+      for (const language of languages) {
+        const baseLanguage = language.toLowerCase().split("-")[0];
+        if (baseLanguage === "ja" || baseLanguage === "en") {
+          location.replace(`./${baseLanguage}/`);
+          return;
+        }
+      }
+
+      location.replace("./en/");
+    })();
+  </script>
+  <noscript>
+    <p><a href="./en/">Continue in English</a> · <a href="./ja/" lang="ja">日本語</a></p>
+  </noscript>
+</body>
+</html>
