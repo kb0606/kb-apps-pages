@@ -26,6 +26,16 @@ mita-mon/
 │  ├─ common/
 │  │  ├─ app-icon.webp
 │  │  └─ privacy-icon.webp
+│  ├─ en/
+│  │  └─ screens/
+│  │     ├─ record-form.webp
+│  │     ├─ timeline-normal.webp
+│  │     ├─ timeline-compact.webp
+│  │     ├─ timeline-thumbnail.webp
+│  │     ├─ timeline-grid.webp
+│  │     ├─ detail.webp
+│  │     ├─ calendar.webp
+│  │     └─ highlight.webp
 │  └─ ja/
 │     ├─ feature-graphic.webp
 │     └─ screens/
@@ -85,7 +95,7 @@ mita-mon/
 
 ## 紹介ページのスクリーンショット
 
-`mita-mon` の日本語紹介ページでは、アプリの実画面を次のファイル名で参照します。
+`mita-mon` の日本語・英語紹介ページでは、各言語のアプリ実画面を同じファイル名で参照します。画像は `assets/ja/screens/` と `assets/en/screens/` に分けて管理します。
 
 | ファイル | 内容 |
 | --- | --- |
@@ -98,8 +108,7 @@ mita-mon/
 | `calendar.webp` | カレンダー |
 | `highlight.webp` | ハイライト |
 
-記録一覧の4種類は、紹介ページ上でカルーセル表示します。
-英語紹介ページでも現在は同じ日本語版スクリーンショットを使っています。
+記録一覧の4種類は、紹介ページ上でカルーセル表示します。各ページでは、そのページの言語に合ったスクリーンショットを使用します。
 
 ## Git LFS と GitHub Pages
 
