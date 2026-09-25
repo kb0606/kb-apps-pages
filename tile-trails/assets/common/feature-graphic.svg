@@ -1,52 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1798" height="875" viewBox="0 0 1798 875">
   <title>Tile Trails feature graphic</title>
+  <defs>
+    <!-- Outer hex: 72 × 84. Inner colored hex: 64 × 76. All coordinates are integers. -->
+    <path id="hex-outer" d="M0 -42 L36 -21 L36 21 L0 42 L-36 21 L-36 -21 Z"/>
+    <path id="hex-inner" d="M0 -38 L32 -19 L32 19 L0 38 L-32 19 L-32 -19 Z"/>
+  </defs>
   <image href="background.png" x="0" y="0" width="1798" height="875" preserveAspectRatio="none"/>
   <!-- A continuous trail of outlined hex tiles, shaded from teal to lime. -->
   <g id="trail-tiles">
-    <g transform="translate(-5 849)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#059b97"/></g>
-    <g transform="translate(68 849)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#079e98"/></g>
-    <g transform="translate(141 849)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#08a199"/></g>
-    <g transform="translate(177.5 785.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#09a598"/></g>
-    <g transform="translate(214 722.5)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#0aa995"/></g>
-    <g transform="translate(287 722.5)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#0cad90"/></g>
-    <g transform="translate(360 722.5)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#10b18a"/></g>
-    <g transform="translate(396.5 659.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#15b584"/></g>
-    <g transform="translate(433 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#1bb97c"/></g>
-    <g transform="translate(506 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#22bd73"/></g>
-    <g transform="translate(579 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#2bc16a"/></g>
-    <g transform="translate(652 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#35c45f"/></g>
-    <g transform="translate(725 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#43c853"/></g>
-    <g transform="translate(798 596)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#54cc46"/></g>
-    <g transform="translate(834.5 532.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#66cf39"/></g>
-    <g transform="translate(871 469.5)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#76d22f"/></g>
-    <g transform="translate(944 406.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#85d526"/></g>
-    <g transform="translate(1017 406.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#92d81f"/></g>
-    <g transform="translate(1090 406.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#9cda1b"/></g>
-    <g transform="translate(1163 406.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#a5dc18"/></g>
-    <g transform="translate(1199.5 343)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#addd17"/></g>
-    <g transform="translate(1236 279.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#b2de19"/></g>
-    <g transform="translate(1309 279.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#b5df1b"/></g>
-    <g transform="translate(1382 279.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#b4de18"/></g>
-    <g transform="translate(1455 279.75)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#afd916"/></g>
-    <g transform="translate(1491.5 216.5)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#a9d613"/></g>
-    <g transform="translate(1528 153.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#a3d411"/></g>
-    <g transform="translate(1601 153.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#9bd20f"/></g>
-    <g transform="translate(1674 153.25)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#92ce10"/></g>
-    <g transform="translate(1710.5 90)"><path d="M0 -42 L36.373 -21 L36.373 21 L0 42 L-36.373 21 L-36.373 -21 Z" fill="#fff"/><path d="M0 -38 L32.909 -19 L32.909 19 L0 38 L-32.909 19 L-32.909 -19 Z" fill="#89ca12"/></g>
+    <!-- Edit the two shared paths above to resize every tile. Centers use a 72px horizontal step or a (36px, 63px) diagonal step. -->
+    <g transform="translate(31 786)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#059b97"/></g>
+    <g transform="translate(67 849)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#079e98"/></g>
+    <g transform="translate(139 849)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#08a199"/></g>
+    <g transform="translate(211 849)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#08a199"/></g>
+    <g transform="translate(247 786)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#08a199"/></g>
+    <g transform="translate(211 723)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#0aa995"/></g>
+    <g transform="translate(247 660)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#0aa995"/></g>
+    <g transform="translate(319 660)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#0aa995"/></g>
+    
+    <!-- <g transform="translate(283 723)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#0cad90"/></g> -->
+    <!-- <g transform="translate(355 723)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#10b18a"/></g> -->
+    <g transform="translate(391 660)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#15b584"/></g>
+    <g transform="translate(427 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <g transform="translate(499 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <g transform="translate(535 660)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <g transform="translate(607 660)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <g transform="translate(643 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <!-- <g transform="translate(607 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g> -->
+    <g transform="translate(679 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <g transform="translate(751 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+    <!-- <g transform="translate(643 471)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g> -->
+    <!-- <g transform="translate(715 471)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g> -->
+    <g transform="translate(787 471)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g>
+
+    <!-- <g transform="translate(391 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g> -->
+    <!-- <g transform="translate(463 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#1bb97c"/></g> -->
+    
+    <!-- <g transform="translate(499 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#22bd73"/></g> -->
+    <!-- <g transform="translate(571 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#2bc16a"/></g> -->
+    <!-- <g transform="translate(643 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#35c45f"/></g> -->
+    <!-- <g transform="translate(715 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#43c853"/></g> -->
+    <!-- <g transform="translate(787 597)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#54cc46"/></g> -->
+    <!-- <g transform="translate(823 534)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#66cf39"/></g> -->
+    <g transform="translate(859 471)"><use href="#hex-outer" fill="#fff"/><use href="#hex-inner" fill="#76d22f"/></g>
   </g>
-  <!-- Walking figure at the beginning of the trail. -->
-  <g transform="translate(176 676)">
-    <circle cx="0" cy="-57" r="21" fill="#fff"/>
-    <circle cx="0" cy="-57" r="14" fill="#008e87"/>
-    <path d="M-12-39 6-43 17-14 12 10 -5 15 -16-6Z
-      M-13-32 -30-14 -43-7 -39 3 -29 1 -10-14Z
-      M9-34 25-16 42-9 39 1 25-3 8-18Z
-      M-8 10 7 15 0 38 -18 59 -29 53 -14 29Z
-      M5 12 17 13 23 37 41 48 35 59 13 49 -1 32Z" fill="#fff"/>
-    <path d="M-9-36 4-39 12-14 8 7 -3 10 -12-7Z
-      M-12-28 -27-12 -36-7 -34-1 -28-3 -8-17Z
-      M8-30 21-15 35-9 34-3 24-6 6-20Z
-      M-6 12 3 15 -3 36 -19 53 -24 50 -11 28Z
-      M7 14 13 15 19 36 35 47 32 53 15 44 2 30Z" fill="#008e87"/>
-  </g>
+  <!-- Walking figure as a separate transparent PNG asset. -->
+  <image href="person-icon.png" x="780" y="330" width="96" height="144" preserveAspectRatio="xMidYMid meet"/>
 </svg>
