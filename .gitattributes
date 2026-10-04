@@ -21,5 +21,6 @@
 # GitHub Pages assets
 # GitHub Pages does not support Git LFS. Published site assets
 # must be stored as regular Git blobs.
+# assets ディレクトリ配下のファイルは Git LFS で管理しない
 # ============================================================
-mita-mon/assets/** -filter -diff -merge -text
+**/assets/** -filter -diff -merge -text
