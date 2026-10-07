@@ -51,34 +51,59 @@ mita-mon/
 │  └─ index.html
 ├─ en/
 │  └─ index.html
+├─ de/
+│  └─ index.html
+├─ es/
+│  └─ index.html
+├─ fr/
+│  └─ index.html
+├─ ko/
+│  └─ index.html
+├─ pt-BR/
+│  └─ index.html
+├─ zh-TW/
+│  └─ index.html
 ├─ privacy-policy/
 │  ├─ index.html
 │  ├─ style.css
 │  ├─ ja/
 │  │  └─ index.html
-│  └─ en/
+│  ├─ en/
+│  │  └─ index.html
+│  ├─ de/
+│  │  └─ index.html
+│  ├─ es/
+│  │  └─ index.html
+│  ├─ fr/
+│  │  └─ index.html
+│  ├─ ko/
+│  │  └─ index.html
+│  ├─ pt-BR/
+│  │  └─ index.html
+│  └─ zh-TW/
 │     └─ index.html
 └─ terms/
    ├─ index.html
    ├─ style.css
    ├─ ja/
    │  └─ index.html
-   └─ en/
+   ├─ en/
+   │  └─ index.html
+   ├─ de/
+   │  └─ index.html
+   ├─ es/
+   │  └─ index.html
+   ├─ fr/
+   │  └─ index.html
+   ├─ ko/
+   │  └─ index.html
+   ├─ pt-BR/
+   │  └─ index.html
+   └─ zh-TW/
       └─ index.html
 ```
 
-今後、紹介ページにほかの言語を追加する場合も、言語コードのディレクトリを追加します。
-
-```text
-mita-mon/
-├─ ja/
-│  └─ index.html
-├─ en/
-│  └─ index.html
-├─ es/
-│  └─ index.html
-└─ ...
-```
+`mita-mon` は日本語 (`ja`)、英語 (`en`)、ドイツ語 (`de`)、スペイン語 (`es`)、フランス語 (`fr`)、韓国語 (`ko`)、ブラジルポルトガル語 (`pt-BR`)、繁體中文 (`zh-TW`) に対応しています。紹介ページ、プライバシーポリシー、利用規約を各言語で用意します。
 
 ## 言語振り分け
 
@@ -87,8 +112,8 @@ mita-mon/
 基本動作:
 
 1. `navigator.languages` / `navigator.language` を参照
-2. `ja-JP` のような値は、完全一致と基本言語 (`ja`) の両方を候補にする
-3. 対応する言語ディレクトリが存在すればそのページへ移動
+2. ブラウザ設定を対応する言語ディレクトリへ対応付ける
+3. 繁體中文 (`zh-TW` / `zh-Hant`) は `/zh-TW/`、ポルトガル語は `/pt-BR/` へ移動
 4. 対応言語がなければ `./en/` へ移動
 
 `mita-mon` の紹介ページ、プライバシーポリシー、利用規約でこの方式を使用しています。
@@ -108,7 +133,7 @@ mita-mon/
 | `calendar.webp` | カレンダー |
 | `highlight.webp` | ハイライト |
 
-記録一覧の4種類は、紹介ページ上でカルーセル表示します。各ページでは、そのページの言語に合ったスクリーンショットを使用します。
+記録一覧の4種類は、紹介ページ上でカルーセル表示します。日本語版と英語版ではそれぞれの言語に合った画面を使用し、追加6言語では各言語の画像を配置するまでプレースホルダーを表示します。
 
 ## Git LFS と GitHub Pages
 
@@ -134,4 +159,4 @@ Git LFS のポインタファイルをそのまま GitHub Pages から参照す�
 /mita-mon/terms/ja/
 ```
 
-英語ページは `/mita-mon/en/` から `/mita-mon/privacy-policy/en/` と `/mita-mon/terms/en/` にリンクします。紹介ページのフッターから日本語・英語を切り替えられます。
+各言語ページから、同じ言語のプライバシーポリシーと利用規約へリンクします。紹介ページと法務ページには8言語の切り替えリンクがあります。

@@ -7,6 +7,7 @@
   <meta name="description" content="Mita-Mon brings your entertainment memories together—from movies, manga, and books to concerts, games, and more.">
   <title>Mita-Mon — Your entertainment, all in one place</title>
   <link rel="icon" href="../assets/common/app-icon.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/common/language-picker.css">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -22,6 +23,23 @@
         <a href="#privacy">Privacy</a>
         <a href="#premium">Pricing</a>
       </nav>
+      <details class="language-picker">
+        <summary aria-label="Select language">
+          <svg class="language-picker-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+          <span>Language</span>
+          <svg class="language-picker-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"></path></svg>
+        </summary>
+        <nav class="language-picker-menu" aria-label="Language selection">
+          <a href="../ja/" lang="ja">日本語</a>
+          <a href="../en/" lang="en" aria-current="page">English</a>
+          <a href="../de/" lang="de">Deutsch</a>
+          <a href="../es/" lang="es">Español</a>
+          <a href="../fr/" lang="fr">Français</a>
+          <a href="../ko/" lang="ko">한국어</a>
+          <a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a>
+          <a href="../zh-TW/" lang="zh-Hant">繁體中文</a>
+        </nav>
+      </details>
     </div>
   </header>
 
@@ -327,7 +345,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-inner footer-inner-no-languages">
       <div class="footer-brand">
         <img src="../assets/common/app-icon.webp" alt="" width="36" height="36">
         <span>Mita-Mon</span>
@@ -336,7 +354,6 @@
         <a href="../privacy-policy/en/">Privacy Policy</a>
         <a href="../terms/en/">Terms of Use</a>
         <a href="mailto:support.ytmp@gmail.com">Contact</a>
-        <a href="../ja/" lang="ja">日本語</a>
       </div>
       <p>© kb apps</p>
     </div>
