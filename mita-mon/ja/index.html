@@ -7,9 +7,10 @@
   <meta name="description" content="ミタモンは、映画・漫画・ライブ・本・ゲームなど、楽しんだエンタメを一元管理して振り返れるアプリです。">
   <title>ミタモン - 楽しんだエンタメを、あとから振り返る。</title>
   <link rel="icon" href="../assets/common/app-icon.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/common/language-picker.css">
   <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body class="locale-ja">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="./" aria-label="ミタモン トップ">
@@ -22,6 +23,23 @@
         <a href="#privacy">プライバシー</a>
         <a href="#premium">料金</a>
       </nav>
+      <details class="language-picker">
+        <summary aria-label="言語を選択">
+          <svg class="language-picker-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+          <span>言語</span>
+          <svg class="language-picker-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"></path></svg>
+        </summary>
+        <nav class="language-picker-menu" aria-label="言語">
+          <a href="../ja/" lang="ja" aria-current="page">日本語</a>
+          <a href="../en/" lang="en">English</a>
+          <a href="../de/" lang="de">Deutsch</a>
+          <a href="../es/" lang="es">Español</a>
+          <a href="../fr/" lang="fr">Français</a>
+          <a href="../ko/" lang="ko">한국어</a>
+          <a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a>
+          <a href="../zh-TW/" lang="zh-Hant">繁體中文</a>
+        </nav>
+      </details>
     </div>
   </header>
 
@@ -331,7 +349,7 @@
   </main>
 
   <footer class="site-footer">
-    <div class="container footer-inner">
+    <div class="container footer-inner footer-inner-ja">
       <div class="footer-brand">
         <img src="../assets/common/app-icon.webp" alt="" width="36" height="36">
         <span>ミタモン</span>
@@ -340,7 +358,6 @@
         <a href="../privacy-policy/ja/">プライバシーポリシー</a>
         <a href="../terms/ja/">利用規約</a>
         <a href="mailto:support.ytmp@gmail.com">お問い合わせ</a>
-        <div class="footer-languages" aria-label="言語"><a href="../ja/" lang="ja" aria-current="page">日本語</a> <a href="../en/" lang="en">English</a> <a href="../de/" lang="de">Deutsch</a> <a href="../es/" lang="es">Español</a> <a href="../fr/" lang="fr">Français</a> <a href="../ko/" lang="ko">한국어</a> <a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a> <a href="../zh-TW/" lang="zh-Hant">繁體中文</a></div>
       </div>
       <p>© kb apps</p>
     </div>
