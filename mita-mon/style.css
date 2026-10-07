@@ -651,7 +651,8 @@ a {
   gap: 18px 28px;
 }
 
-.footer-inner-ja {
+.footer-inner-ja,
+.footer-inner-no-languages {
   grid-template-areas: "brand copyright" "links links";
 }
 
@@ -787,7 +788,8 @@ a {
     grid-template-areas: "brand" "links" "languages" "copyright";
   }
 
-  .footer-inner-ja {
+  .footer-inner-ja,
+  .footer-inner-no-languages {
     grid-template-areas: "brand" "links" "copyright";
   }
 }

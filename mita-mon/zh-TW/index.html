@@ -7,12 +7,30 @@
   <meta name="description" content="把電影、書籍、演唱會、遊戲等體驗記錄在同一處，隨時回顧曾經享受的時光。">
   <title>Mita-Mon — 將喜愛的體驗記錄在一起，隨時回味</title>
   <link rel="icon" href="../assets/common/app-icon.webp" type="image/webp">
+  <link rel="stylesheet" href="../assets/common/language-picker.css">
   <link rel="stylesheet" href="../style.css">
 </head>
 <body>
   <header class="site-header"><div class="container header-inner">
     <a class="brand" href="./" aria-label="Mita-Mon"><img src="../assets/common/app-icon.webp" alt="" width="42" height="42"><span>Mita-Mon</span></a>
     <nav class="nav" aria-label="功能介紹"><a href="#overview">功能介紹</a><a href="#record">新增記錄</a><a href="#privacy">隱私</a><a href="#premium">價格</a></nav>
+    <details class="language-picker">
+      <summary aria-label="選擇語言">
+        <svg class="language-picker-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg>
+        <span>語言</span>
+        <svg class="language-picker-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"></path></svg>
+      </summary>
+      <nav class="language-picker-menu" aria-label="語言選單">
+        <a href="../ja/" lang="ja">日本語</a>
+        <a href="../en/" lang="en">English</a>
+        <a href="../de/" lang="de">Deutsch</a>
+        <a href="../es/" lang="es">Español</a>
+        <a href="../fr/" lang="fr">Français</a>
+        <a href="../ko/" lang="ko">한국어</a>
+        <a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a>
+        <a href="../zh-TW/" lang="zh-Hant" aria-current="page">繁體中文</a>
+      </nav>
+    </details>
   </div></header>
   <main>
     <section class="hero"><div class="container hero-grid"><div class="hero-copy">
@@ -31,6 +49,6 @@
     <section class="section premium-section" id="premium"><div class="container"><div class="section-heading centered-heading"><div><p class="section-kicker">一次性購買</p><h2>20 筆記錄可免費使用，準備好時再一次升級。</h2></div><p>Android 版最多可免費建立 20 筆記錄。一次購買 Premium 即可解除筆數限制。</p></div><div class="plan-grid"><article class="plan-card"><span class="plan-name">FREE</span><h3>免費版</h3><p class="plan-main">最多 20 筆記錄</p><ul><li>包含所有核心功能</li></ul></article><article class="plan-card plan-card-premium"><span class="plan-badge">一次性購買</span><span class="plan-name">PREMIUM</span><h3>Premium</h3><p class="plan-main">不限記錄筆數</p><ul><li>一次購買，無需訂閱</li></ul></article></div></div></section>
     <section class="section final-cta"><div class="container cta-box"><img src="../assets/common/app-icon.webp" alt="" width="112" height="112" style="background-color:#fff"><div><p class="section-kicker">Mita-Mon</p><h2>Mita-Mon — 專屬於自己的娛樂回憶</h2><p>電影、書籍、演唱會等各種體驗，集中記錄，隨時回顧。</p></div><span class="cta-status"><a href="https://play.google.com/store/apps/details?id=com.mita_mon.app" target="_blank" rel="noopener noreferrer">Google Play / Android</a></span></div></section>
   </main>
-  <footer class="site-footer"><div class="container footer-inner"><div class="footer-brand"><img src="../assets/common/app-icon.webp" alt="" width="36" height="36"><span>Mita-Mon</span></div><nav class="footer-links" aria-label="頁面連結"><a href="../privacy-policy/zh-TW/">隱私權政策</a><a href="../terms/zh-TW/">使用條款</a><a href="mailto:support.ytmp@gmail.com">聯絡我們</a></nav><div class="footer-languages" aria-label="語言"><a href="../ja/" lang="ja">日本語</a> <a href="../en/" lang="en">English</a> <a href="../de/" lang="de">Deutsch</a> <a href="../es/" lang="es">Español</a> <a href="../fr/" lang="fr">Français</a> <a href="../ko/" lang="ko">한국어</a> <a href="../pt-BR/" lang="pt-BR">Português (Brasil)</a> <a href="../zh-TW/" lang="zh-Hant" aria-current="page">繁體中文</a></div><p>© kb apps</p></div></footer>
+  <footer class="site-footer"><div class="container footer-inner footer-inner-no-languages"><div class="footer-brand"><img src="../assets/common/app-icon.webp" alt="" width="36" height="36"><span>Mita-Mon</span></div><nav class="footer-links" aria-label="頁面連結"><a href="../privacy-policy/zh-TW/">隱私權政策</a><a href="../terms/zh-TW/">使用條款</a><a href="mailto:support.ytmp@gmail.com">聯絡我們</a></nav><p>© kb apps</p></div></footer>
 </body>
 </html>
