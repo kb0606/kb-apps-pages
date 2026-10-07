@@ -54,6 +54,20 @@ h3 {
 
 p { margin: 12px 0; }
 
+.language-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 10px;
+  margin: 0 0 28px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 0.82rem;
+}
+
+.language-nav a { text-decoration: none; }
+.language-nav a[aria-current="page"] { font-weight: 800; }
+
 .contact {
   margin-top: 16px;
   padding: 20px;

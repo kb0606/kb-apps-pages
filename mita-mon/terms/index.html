@@ -9,28 +9,19 @@
 <body>
   <script>
     (async () => {
-      const seen = new Set();
-      const candidates = [];
-
-      const add = (lang) => {
-        if (!lang) return;
-        const normalized = lang.toLowerCase();
+      const localeFor = (language) => {
+        const normalized = language.toLowerCase();
         const base = normalized.split("-")[0];
-
-        for (const value of [normalized, base]) {
-          if (value && value !== "en" && !seen.has(value)) {
-            seen.add(value);
-            candidates.push(value);
-          }
-        }
+        if (base === "zh" && (!normalized.includes("-") || /^(zh-(tw|hk|mo)|zh-hant)/.test(normalized))) return "zh-TW";
+        if (base === "pt") return "pt-BR";
+        return ["ja", "en", "de", "es", "fr", "ko"].includes(base) ? base : null;
       };
 
-      for (const lang of navigator.languages || [navigator.language]) {
-        add(lang);
-      }
-
-      for (const lang of candidates) {
-        const target = `./${lang}/`;
+      const languages = navigator.languages?.length ? navigator.languages : [navigator.language || ""];
+      for (const language of languages) {
+        const locale = localeFor(language);
+        if (!locale) continue;
+        const target = `./${locale}/`;
         try {
           const response = await fetch(target, {
             method: "HEAD",
@@ -49,7 +40,7 @@
     })();
   </script>
   <noscript>
-    <p><a href="./en/">Continue in English</a></p>
+    <p><a href="./ja/" lang="ja">日本語</a> · <a href="./en/" lang="en">English</a> · <a href="./de/" lang="de">Deutsch</a> · <a href="./es/" lang="es">Español</a> · <a href="./fr/" lang="fr">Français</a> · <a href="./ko/" lang="ko">한국어</a> · <a href="./pt-BR/" lang="pt-BR">Português (Brasil)</a> · <a href="./zh-TW/" lang="zh-Hant">繁體中文</a></p>
   </noscript>
 </body>
 </html>

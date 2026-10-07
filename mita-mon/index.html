@@ -13,10 +13,18 @@
         ? navigator.languages
         : [navigator.language || ""];
 
+      const localeFor = (language) => {
+        const normalized = language.toLowerCase();
+        const base = normalized.split("-")[0];
+        if (base === "zh" && (!normalized.includes("-") || /^(zh-(tw|hk|mo)|zh-hant)/.test(normalized))) return "zh-TW";
+        if (base === "pt") return "pt-BR";
+        return ["ja", "en", "de", "es", "fr", "ko"].includes(base) ? base : null;
+      };
+
       for (const language of languages) {
-        const baseLanguage = language.toLowerCase().split("-")[0];
-        if (baseLanguage === "ja" || baseLanguage === "en") {
-          location.replace(`./${baseLanguage}/`);
+        const locale = localeFor(language);
+        if (locale) {
+          location.replace(`./${locale}/`);
           return;
         }
       }
@@ -25,7 +33,7 @@
     })();
   </script>
   <noscript>
-    <p><a href="./en/">Continue in English</a> · <a href="./ja/" lang="ja">日本語</a></p>
+    <p><a href="./ja/" lang="ja">日本語</a> · <a href="./en/" lang="en">English</a> · <a href="./de/" lang="de">Deutsch</a> · <a href="./es/" lang="es">Español</a> · <a href="./fr/" lang="fr">Français</a> · <a href="./ko/" lang="ko">한국어</a> · <a href="./pt-BR/" lang="pt-BR">Português (Brasil)</a> · <a href="./zh-TW/" lang="zh-Hant">繁體中文</a></p>
   </noscript>
 </body>
 </html>
