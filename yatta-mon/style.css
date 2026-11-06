@@ -1560,3 +1560,78 @@ body.locale-ja .cta-box .character-cta {
 @media (max-width:640px) {
   body.locale-ja .hero-visual .character-hero { width: min(100%, 260px); }
 }
+
+/* Japanese landing page: trim cumulative vertical spacing while keeping sections distinct. */
+body.locale-ja .hero {
+  padding-block: 64px 42px;
+}
+body.locale-ja .hero-lead {
+  margin-top: 22px;
+}
+body.locale-ja .hero-actions {
+  margin-top: 26px;
+}
+body.locale-ja .section {
+  padding-block: 52px;
+}
+body.locale-ja .section.highlight-section {
+  padding-bottom: 24px;
+}
+body.locale-ja .section.ownership-section {
+  padding-top: 36px;
+}
+body.locale-ja .intro-section .section-lead {
+  margin-top: 20px;
+}
+body.locale-ja .section-heading {
+  margin-bottom: 32px;
+}
+body.locale-ja .feature-card .feature-icon {
+  margin-bottom: 40px;
+}
+body.locale-ja .experience-step {
+  padding-block: 56px;
+}
+body.locale-ja .experience-step .step-copy > p {
+  margin-top: 18px;
+}
+body.locale-ja .experience-step .feature-list {
+  margin-top: 22px;
+}
+@media (min-width: 901px) {
+  body.locale-ja .feature-card {
+    min-height: 280px;
+  }
+}
+@media (max-width: 900px) {
+  body.locale-ja .hero {
+    padding-top: 50px;
+  }
+  body.locale-ja .experience-step {
+    gap: 36px;
+  }
+}
+@media (max-width: 640px) {
+  body.locale-ja .hero {
+    padding-top: 34px;
+  }
+  body.locale-ja .section {
+    padding-block: 42px;
+  }
+  body.locale-ja .section.ownership-section {
+    padding-top: 28px;
+  }
+  body.locale-ja .hero-grid {
+    gap: 22px;
+  }
+  body.locale-ja .section-heading {
+    margin-bottom: 24px;
+  }
+  body.locale-ja .feature-card .feature-icon {
+    margin-bottom: 28px;
+  }
+  body.locale-ja .experience-step {
+    gap: 30px;
+    padding-block: 44px;
+  }
+}
