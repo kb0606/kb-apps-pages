@@ -1537,3 +1537,28 @@ body.locale-ja [id] { scroll-margin-top: 94px; }
  .capture-pair .capture-block figcaption { font-size: .76rem; }
  .screenshot-sections .section-heading { margin-bottom: 14px; }
 }
+
+/* Japanese page: Yatta-Mon character hero and app icon. */
+body.locale-ja .hero-visual .character-hero {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: min(100%, 380px);
+  height: auto;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+}
+body.locale-ja .brand img,
+body.locale-ja .footer-brand img,
+body.locale-ja .cta-box .character-cta {
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  object-fit: contain;
+}
+@media (max-width:640px) {
+  body.locale-ja .hero-visual .character-hero { width: min(100%, 260px); }
+}
