@@ -1551,8 +1551,6 @@ body.locale-ja .hero-visual .character-hero {
   box-shadow: none;
   object-fit: contain;
 }
-body.locale-ja .brand img,
-body.locale-ja .footer-brand img,
 body.locale-ja .cta-box .character-cta {
   border-radius: 0;
   background: transparent;

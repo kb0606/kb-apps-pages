@@ -19,9 +19,9 @@
 ## 公開前チェック
 
 - [x] 日本語紹介ページに実アプリのスクリーンショット12枚を配置（記録一覧4形式、写真一覧、詳細、検索、カレンダー、マップ、ハイライト、記録フォーム、コラージュ）
-- [ ] 正式なアプリアイコン画像を配置する
+- [x] 正式なアプリアイコン画像を配置する（`assets/common/app-icon.png`）
 - [ ] Google Play 公開後、正しいストアリンクを追加する
 - [ ] プライバシーポリシー・利用規約を独立して用意する際は、ヤッタモン固有の仕様を反映し、他アプリの法務文書を転用しない
 - [ ] 価格・機能・対応言語はリリース時のアプリと照合する
 
-注: `assets/ja/screens/*.webp` は Git LFS ポインタ形式のため、GitHub Pages の相対パスでは画像として表示できません。日本語紹介ページは暫定的に、GitHub が公開リポジトリの LFS 画像を配信する `https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/` を参照しています。将来は `.gitattributes` を調整し、画像実体を通常の Git blob としてコミットして相対パス配信に切り替えることを推奨します。他言語ページには今回反映していません。
+注: `assets/common/app-icon.png` は Git LFS の対象から除外し、通常の Git blob として保存する設定です。日本語ページのファビコン・ヘッダー・フッターから相対パスで参照します。`assets/ja/screens/*.webp` は引き続き Git LFS 管理のため、日本語ページでは `https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/` を参照しています。
