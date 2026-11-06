@@ -1505,3 +1505,35 @@ a {
 .price-disclaimer { margin: 22px auto 0; color: var(--ink-soft); text-align: center; font-size: .85rem; }
 @media(max-width: 860px) { .hero-photo-board { height: 350px; width: min(100%,335px); } .polaroid span { font-size: 3.5rem; } }
 @media(max-width: 640px) { .hero-photo-board { width: min(100%,300px); height: 320px; } .polaroid span { font-size: 3rem; } .feature-card { min-height: 270px; } .cta-mark { margin-inline: auto; width: 92px; height: 92px; } .memory-tile { min-height: 135px; padding: 15px; } }
+
+
+/* Japanese landing page: real Yatta-Mon screenshots */
+body.locale-ja [id] { scroll-margin-top: 94px; }
+.screenshot-sections .section-heading { margin-bottom: 20px; }
+.screenshot-sections .experience-step:first-of-type { border-top: 1px solid var(--line); }
+.screenshot-sections .step-copy h3 { line-height: 1.4; }
+.screenshot-link { display: block; width: 100%; text-decoration: none; border-radius: 40px; }
+.screenshot-link:focus-visible { outline: 3px solid var(--orange); outline-offset: 7px; }
+.hero-screenshot { position: relative; z-index: 1; width: min(100%, 300px); margin: 0 auto; text-align: center; }
+.hero-screenshot .phone-frame { width: 100%; }
+.hero-visual .hero-screenshot .capture-image { display: block; width: 100%; max-width: 100%; box-shadow: none; border: 0; border-radius: 29px; }
+.hero-screenshot figcaption { margin-top: 15px; color: var(--ink-soft); font-size: .83rem; font-weight: 700; }
+.capture-block figcaption { margin-top: 15px; color: var(--ink-soft); font-size: .87rem; text-align: center; }
+.capture-highlight figcaption { color: rgba(255,255,255,.92); }
+.capture-block .phone-frame { width: min(100%, 335px); }
+.capture-pair .capture-block .phone-frame { width: 100%; max-width: 270px; }
+.capture-carousel .phone-frame { width: min(100%, 330px); }
+.capture-image { max-width: 100%; object-fit: contain; }
+.screenshot-sections .capture-carousel { align-self: start; }
+.carousel-arrow { border-color: var(--line); }
+.carousel-arrow:focus-visible,.carousel-dot:focus-visible { outline: 3px solid var(--orange); outline-offset: 3px; }
+@media (max-width:900px) {
+ .hero-screenshot { width: min(100%, 300px); }
+ .screenshot-sections .experience-step { gap: 38px; }
+}
+@media (max-width:640px) {
+ .hero-screenshot { width: min(82vw, 285px); }
+ .capture-pair .capture-block .phone-frame { max-width: none; }
+ .capture-pair .capture-block figcaption { font-size: .76rem; }
+ .screenshot-sections .section-heading { margin-bottom: 14px; }
+}
