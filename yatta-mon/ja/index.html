@@ -8,6 +8,7 @@
   <title>ヤッタモン — 楽しんだ思い出を、写真と一緒に</title>
   <link rel="stylesheet" href="../assets/common/language-picker.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="preconnect" href="https://media.githubusercontent.com">
 </head>
 <body class="locale-ja">
   <header class="site-header">
@@ -16,7 +17,7 @@
         <b class="brand-mark" aria-hidden="true">Y</b><span>ヤッタモン</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#overview">特徴</a><a href="#record">記録</a><a href="#privacy">プライバシー</a><a href="#premium">料金</a>
+        <a href="#timeline">記録一覧</a><a href="#photos">写真</a><a href="#map">マップ</a><a href="#premium">料金</a>
       </nav>
       <details class="language-picker">
         <summary aria-label="言語">
@@ -46,14 +47,14 @@
           <p class="hero-lead">旅行も、アウトドアも、いつもの週末も。体験を写真・感想と一緒に残して、あとから楽しく振り返るアプリ。</p>
           <div class="hero-actions"><span class="availability">Android向けに開発</span></div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
+        <div class="hero-visual">
           <div class="hero-glow"></div>
-          <div class="hero-photo-board">
-            <div class="polaroid polaroid-trip"><span>✈️</span></div>
-            <div class="polaroid polaroid-nature"><span>⛰️</span></div>
-            <div class="polaroid polaroid-food"><span>🍽️</span></div>
-            <div class="album-label"><b>YattaMon</b><small>YOUR PHOTO JOURNAL</small></div>
-          </div>
+          <figure class="hero-screenshot">
+            <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/photos.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの写真一覧画面を拡大して開く">
+              <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/photos.webp" alt="ヤッタモンの写真一覧。体験ごとの写真をアルバムのように見る画面" fetchpriority="high" loading="eager" decoding="async"></div>
+            </a>
+            <figcaption>実際のアプリ画面：写真一覧</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -78,6 +79,120 @@
         <article class="feature-card"><span class="feature-number">06</span><span class="feature-icon" aria-hidden="true">✨</span><h3>コラージュ</h3><p>写真を組み合わせた画像を作って、思い出を友達と共有できます。</p></article></div>
       </div>
     </section>
+
+    <section class="section app-flow-section screenshot-sections" id="timeline">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">APP SCREENS</p><h2>実際の画面で、ヤッタモンをご紹介。</h2></div>
+          <p>写真を選ぶと、拡大した画面でもご覧いただけます。</p>
+        </div>
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">記録一覧</span>
+            <h3>やってきたことが、<br>ひと目で分かる。</h3>
+            <p>体験を時系列で一覧に。写真を大きく眺めたい日も、記録をまとめて見返したい日も、4種類の表示から選べます。</p>
+            <ul class="feature-list">
+              <li>サムネイル・画像グリッド・通常・コンパクト表示</li>
+              <li>日付順・満足度順の並び替え</li>
+              <li>カテゴリやタグによる絞り込み</li>
+            </ul>
+          </div>
+          <div class="capture-carousel" data-carousel aria-label="記録一覧の表示方法">
+  <div class="carousel-viewport" tabindex="0">
+    <div class="carousel-track">
+      <figure class="carousel-slide" data-label="サムネイル表示">
+        <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/timeline-thumbnail.webp" alt="ヤッタモンの記録一覧・サムネイル表示" loading="lazy" decoding="async"></div>
+        <figcaption>写真と情報をバランスよく表示</figcaption>
+      </figure>
+      <figure class="carousel-slide" data-label="画像グリッド表示">
+        <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/timeline-grid.webp" alt="ヤッタモンの記録一覧・画像グリッド表示" loading="lazy" decoding="async"></div>
+        <figcaption>写真を中心に思い出を眺める</figcaption>
+      </figure>
+      <figure class="carousel-slide" data-label="通常表示">
+        <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/timeline-normal.webp" alt="ヤッタモンの記録一覧・通常表示" loading="lazy" decoding="async"></div>
+        <figcaption>体験の内容を詳しく確認</figcaption>
+      </figure>
+      <figure class="carousel-slide" data-label="コンパクト表示">
+        <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/timeline-compact.webp" alt="ヤッタモンの記録一覧・コンパクト表示" loading="lazy" decoding="async"></div>
+        <figcaption>多くの記録を一度に確認</figcaption>
+      </figure>
+    </div>
+    <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="前の表示形式"><span aria-hidden="true">‹</span></button>
+    <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="次の表示形式"><span aria-hidden="true">›</span></button>
+  </div>
+  <div class="carousel-meta" aria-live="polite"><strong class="carousel-current-label">サムネイル表示</strong></div>
+  <div class="carousel-dots" role="group" aria-label="記録一覧の表示形式を選択">
+    <button type="button" class="carousel-dot is-active" aria-label="サムネイル表示" aria-current="true"></button>
+    <button type="button" class="carousel-dot" aria-label="画像グリッド表示"></button>
+    <button type="button" class="carousel-dot" aria-label="通常表示"></button>
+    <button type="button" class="carousel-dot" aria-label="コンパクト表示"></button>
+  </div>
+</div>
+        </div>
+        <div class="experience-step experience-step-reverse" id="photos">
+          <div class="step-copy">
+            <span class="step-badge">写真・記録詳細</span>
+            <h3>写真と一緒に、<br>あの日の体験を思い出す。</h3>
+            <p>写真一覧では体験ごとに写真を眺められます。気になる記録を開くと、撮影した写真や感想、場所、評価をまとめて確認できます。</p>
+            <ul class="feature-list">
+              <li>1回の体験につき最大20枚の写真</li>
+              <li>写真は全画面表示・ピンチ拡大に対応</li>
+              <li>お気に入りの1枚をメイン写真に設定</li>
+            </ul>
+          </div>
+          <figure class="capture-block ">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/detail.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの記録詳細画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/detail.webp" alt="ヤッタモンの記録詳細画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>思い出の写真や感想をまとめて確認</figcaption>
+</figure>
+        </div>
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">検索・カレンダー</span>
+            <h3>「いつ」「何を」を手がかりに、<br>思い出を探そう。</h3>
+            <p>名前や場所の検索に加え、カテゴリ・タグ・同行者・初体験で絞り込み。日付から探したいときはカレンダーが便利です。</p>
+            <ul class="feature-list">
+              <li>キーワード・カテゴリ・タグで検索</li>
+              <li>同行者・初めての体験でも絞り込み</li>
+              <li>日付・期間を指定して探せる</li>
+            </ul>
+          </div>
+          <div class="capture-pair">
+            <figure class="capture-block capture-block-small">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/filter.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの検索・フィルター画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/filter.webp" alt="ヤッタモンの検索・フィルター画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>条件から体験を検索</figcaption>
+</figure>
+            <figure class="capture-block capture-block-small capture-lift">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/calendar.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンのカレンダー画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/calendar.webp" alt="ヤッタモンのカレンダー画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>カレンダーから思い出を探す</figcaption>
+</figure>
+          </div>
+        </div>
+        <div class="experience-step experience-step-reverse" id="map">
+          <div class="step-copy">
+            <span class="step-badge">マップ</span>
+            <h3>行った場所から、<br>体験を振り返る。</h3>
+            <p>写真に位置情報が含まれていれば、思い出の場所を地図上で確認できます。地図上の記録をタップすると、体験の詳細に進めます。</p>
+            <ul class="feature-list">
+              <li>写真のGPS情報を利用</li>
+              <li>場所に紐づいた記録を地図上に表示</li>
+              <li>端末の現在地を取得せずに利用可能</li>
+            </ul>
+          </div>
+          <figure class="capture-block ">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/map.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの写真位置情報マップ画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/map.webp" alt="ヤッタモンの写真位置情報マップ画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>写真の撮影場所を地図で振り返る</figcaption>
+</figure>
+        </div>
+      </div>
+    </section>
     <section class="section highlight-section" id="highlight">
       <div class="container highlight-grid">
         <div class="highlight-copy">
@@ -86,7 +201,12 @@
           <p>思い出を一覧で、写真はアルバムで、訪れた場所はマップで。いろんな方法で、あの日の思い出を振り返れます。</p>
           <div class="highlight-tags"><span>タイムライン</span><span>写真一覧</span><span>マップ</span><span>ハイライト</span></div>
         </div>
-        <div class="memory-tiles" aria-label="Illustration"><div class="memory-tile memory-tile-1"><span aria-hidden="true">📷</span><strong>写真から探す</strong></div><div class="memory-tile memory-tile-2"><span aria-hidden="true">📍</span><strong>場所から見つける</strong></div><div class="memory-tile memory-tile-3"><span aria-hidden="true">📈</span><strong>数字で振り返る</strong></div></div>
+        <figure class="capture-block capture-highlight">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/highlight.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンのハイライト画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/highlight.webp" alt="ヤッタモンのハイライト画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>体験の数や満足度を振り返る</figcaption>
+</figure>
       </div>
     </section>
     <section class="section app-flow-section" id="record">
@@ -98,16 +218,35 @@
             <p class="section-lead">「何をしたか」を入力して、日付や写真を追加。感想、満足度、初体験かどうか、またやりたいかも、残したい分だけ記録できます。</p>
             <ul class="feature-list"><li>1回の体験を1件の記録に</li><li>カテゴリ・タグ・同行者で整理</li><li>満足度・またやりたい気持ちも保存</li></ul>
           </div>
-          <div class="example-card" aria-label="入力項目のイメージ">
-            <div class="example-top">入力項目のイメージ</div>
-            <div class="example-art" aria-hidden="true"><span>🥾</span><span>🌲</span><span>☀️</span></div>
-            <div class="example-copy">
-              <strong>週末のハイキング</strong>
-              <span>日付・場所・写真</span>
-              <em>またやりたい</em>
-            </div>
-            <small>※ 実際のアプリ画面ではなく、記録内容のイメージです。</small>
+          <figure class="capture-block ">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/record-form.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの新規記録フォーム画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/record-form.webp" alt="ヤッタモンの新規記録フォーム画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>タイトル・日付・写真・感想などを入力</figcaption>
+</figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-flow-section" id="share">
+      <div class="container">
+        <div class="experience-step experience-step-reverse">
+          <div class="step-copy">
+            <span class="step-badge">写真の共有</span>
+            <h3>思い出の写真をまとめて、<br>一枚のコラージュに。</h3>
+            <p>体験に登録した写真を使って、机に広げたようなコラージュ画像を作れます。レイアウトを作り直したり、画像として保存・共有したりできます。</p>
+            <ul class="feature-list">
+              <li>記録内の写真を組み合わせて1枚に</li>
+              <li>コラージュを作り直して選べる</li>
+              <li>画像の保存・共有に対応</li>
+            </ul>
           </div>
+          <figure class="capture-block ">
+  <a class="screenshot-link" href="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/share_photo.webp" target="_blank" rel="noopener noreferrer" aria-label="ヤッタモンの写真コラージュ共有画面を拡大して開く">
+    <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/ja/screens/share_photo.webp" alt="ヤッタモンの写真コラージュ共有画面" loading="lazy" decoding="async"></div>
+  </a>
+  <figcaption>思い出を1枚の画像にまとめて共有</figcaption>
+</figure>
         </div>
       </div>
     </section>
@@ -163,5 +302,6 @@
       <p>© kb apps</p>
     </div>
   </footer>
+  <script src="../assets/common/screenshot-carousel.js" defer></script>
 </body>
 </html>
