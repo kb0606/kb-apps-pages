@@ -1508,7 +1508,7 @@ a {
 
 
 /* Japanese landing page: real Yatta-Mon screenshots */
-html { scroll-padding-top: 94px; }
+body.locale-ja [id] { scroll-margin-top: 94px; }
 .screenshot-sections .section-heading { margin-bottom: 20px; }
 .screenshot-sections .experience-step:first-of-type { border-top: 1px solid var(--line); }
 .screenshot-sections .step-copy h3 { line-height: 1.4; }
