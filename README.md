@@ -160,3 +160,17 @@ Git LFS のポインタファイルをそのまま GitHub Pages から参照す�
 ```
 
 各言語ページから、同じ言語のプライバシーポリシーと利用規約へリンクします。紹介ページと法務ページには8言語の切り替えリンクがあります。
+
+## yatta-mon 紹介ページ
+
+`yatta-mon/` に体験・写真記録アプリ「ヤッタモン」の紹介ページを置きます。
+
+- 紹介: `/yatta-mon/` （ブラウザ言語で切替）
+- 対応言語: `ja`, `en`, `de`, `es`, `fr`, `ko`, `pt-BR`, `zh-TW`
+- スタイル: `yatta-mon/style.css`（ミタモンの基本スタイルをベースに独自の配色を追加）
+- 言語メニュー: `yatta-mon/assets/common/language-picker.css`
+- 内容の根拠: `kb0606/yatta-mon` の `docs/product.md`、`README.md`、課金プロバイダー
+
+現状、ヤッタモンの実スクリーンショットは公開用アセットとして取り込んでいません。Git LFS 管理下の画像ポインタを公開用画像として使わないようにし、現時点ではイラストで表現しています。Google Play の公開 URL が確定したら、その正規リンクを追加してください。
+
+`yatta-mon/` 以下に画像を追加する際は、GitHub Pages 配信対象を通常の Git blob にするため、`.gitattributes` に `yatta-mon/assets/** -filter -diff -merge -text` を追加してください。
