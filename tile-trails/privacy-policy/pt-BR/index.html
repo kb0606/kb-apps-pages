@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Política de Privacidade do Tile Trails sobre localização, Google Maps e registros de atividades.">
+  <title>Política de Privacidade do Tile Trails</title>
+  <link rel="stylesheet" href="../../assets/common/language-picker.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="legal-language-tools">
+    <details class="language-picker">
+      <summary aria-label="Selecionar idioma"><svg class="language-picker-globe" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a15 15 0 0 1 0 18M12 3a15 15 0 0 0 0 18"></path></svg><span>Idioma</span><svg class="language-picker-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="m2 4 4 4 4-4"></path></svg></summary>
+      <nav class="language-picker-menu" aria-label="Seleção de idioma"><a href="../ja/" lang="ja">日本語</a><a href="../en/" lang="en">English</a><a href="../de/" lang="de">Deutsch</a><a href="../es/" lang="es">Español</a><a href="../fr/" lang="fr">Français</a><a href="../ko/" lang="ko">한국어</a><a href="../pt-BR/" lang="pt-BR" aria-current="page">Português (Brasil)</a><a href="../zh-TW/" lang="zh-Hant">繁體中文</a></nav>
+    </details>
+  </header>
+  <main>
+    <h1>Política de Privacidade do Tile Trails</h1>
+    <p class="updated">Última atualização: 10 de novembro de 2026</p>
+    <p>Tile Trails (o “Aplicativo”) registra atividades como caminhadas, corridas, passeios de bicicleta e viagens de carro para que você possa consultar seus trajetos e os hexágonos visitados em um mapa. Esta Política explica quais informações o Aplicativo trata e como ele se comunica com serviços externos, incluindo o Google Maps.</p>
+    <p>Não é necessário criar uma conta para usar o Aplicativo.</p>
+
+    <h2>1. Informações tratadas pelo Aplicativo</h2>
+    <p>Os registros de atividade podem incluir os horários de início e término das sessões, o tipo de atividade, o título, o tempo pausado e dados de localização GPS (latitude, longitude, data e hora, e precisão da localização). O Aplicativo calcula, entre outros dados, a distância, a duração ativa, a velocidade e os hexágonos H3 visitados. O título de uma sessão pode ser criado a partir do nome do local da primeira posição registrada e pode ser editado por você.</p>
+    <p>O Aplicativo também salva no dispositivo configurações como idioma, unidade de distância, parada automática e modo de exibição do mapa. O simples uso do Aplicativo não coleta seu nome, endereço de e-mail ou contatos.</p>
+
+    <h2>2. Uso da localização e permissões</h2>
+    <p>Ao iniciar uma sessão, o Aplicativo usa a localização para registrar seu trajeto e os hexágonos visitados. A coleta pode continuar em segundo plano enquanto uma gravação estiver ativa. Ela é interrompida quando você pausa a sessão e termina quando você a encerra. Esse recurso exige as permissões do sistema operacional para localização precisa e acesso em segundo plano.</p>
+    <p>Se você usar o controle de localização atual do mapa fora de uma gravação ativa, o Aplicativo poderá obter sua posição para centralizar o mapa. Essa posição não será salva como um ponto do trajeto. O registro de atividades não funciona sem a permissão de localização.</p>
+
+    <h2>3. Finalidades de uso</h2>
+    <p>As informações são usadas para registrar atividades; exibir trajetos e mapas; consultar histórico e estatísticas; calcular os hexágonos visitados; editar e excluir registros; e criar ou restaurar backups. O provedor do Aplicativo não usa os registros de atividade para publicidade ou rastreamento comportamental.</p>
+
+    <h2>4. Armazenamento e comunicação com servidores</h2>
+    <p>Os registros de atividade e os dados de localização ficam em um banco de dados SQLite no seu dispositivo. As configurações ficam no armazenamento local do Aplicativo. O Aplicativo não possui sistema de contas, servidor do provedor para armazenar dados de usuários ou sincronização na nuvem. Durante o uso normal, o Aplicativo não envia automaticamente registros de atividade ou histórico GPS ao provedor, que não opera um servidor para recebê-los ou armazená-los.</p>
+    <p>No Android, o Aplicativo desativa o Android Cloud Auto Backup. Transferências oferecidas pelo sistema operacional ou fabricante do dispositivo estão sujeitas aos recursos e às políticas desses fornecedores.</p>
+
+    <h2>5. Google Maps e serviços externos</h2>
+    <p>O Aplicativo usa o SDK do Google Maps para exibir mapas, o que exige comunicação entre seu dispositivo e os servidores do Google Maps. Nessas solicitações, o Google pode receber ou registrar seu endereço IP, informações do dispositivo e do sistema operacional, versões do Aplicativo e do SDK, horários das solicitações e informações sobre interações com o mapa. A documentação publicada do SDK para Android também descreve um identificador do SDK, informações sobre falhas e interações como mover ou ampliar o mapa. As solicitações podem indicar a área exibida; durante uma gravação, se o mapa acompanhar sua localização atual, o Google poderá inferir aproximadamente a região em que você está. Consulte as <a href="https://developers.google.com/maps/documentation/android-sdk/play-data-disclosure" target="_blank" rel="noopener">informações do Google sobre dados do SDK do Maps</a> e as <a href="https://developers.google.com/maps/security/compliance/security-compliance" target="_blank" rel="noopener">informações sobre o tratamento de dados do Google Maps Platform</a>.</p>
+    <p>O Aplicativo sobrepõe trajetos e hexágonos visitados ao mapa usando registros armazenados no dispositivo. Ele não envia todo o seu histórico de atividades a um servidor operado pelo provedor do Aplicativo. Ainda assim, o Google pode tratar a área do mapa e outras informações associadas às solicitações do SDK para exibir o mapa. O tratamento feito pelo Google é regido, entre outros documentos, pela <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de Privacidade do Google</a>.</p>
+    <p>Para criar o título de uma sessão a partir da primeira posição GPS, o Aplicativo usa o recurso de geocodificação reversa do sistema operacional. Dependendo do dispositivo e do sistema, as coordenadas usadas para obter o nome de um local podem ser enviadas ao fornecedor do sistema operacional ou a outro prestador de serviço. As políticas de privacidade desses fornecedores se aplicam a esse tratamento.</p>
+
+    <h2>6. Backup e restauração</h2>
+    <p>A seu pedido, sessões concluídas podem ser exportadas em um arquivo ZIP de backup e importadas posteriormente. O backup pode incluir datas e horários das sessões, tipo de atividade, título, tempo pausado, coordenadas GPS, horários das medições e precisão da localização.</p>
+    <p>O arquivo é salvo no local que você escolher por meio dos recursos de salvar ou compartilhar do sistema operacional. O Aplicativo não o envia automaticamente. Como o backup contém histórico de localização, guarde-o com segurança e tenha cuidado ao compartilhá-lo. Se você escolher armazenamento na nuvem ou outro aplicativo como destino, a política de privacidade desse serviço se aplicará.</p>
+
+    <h2>7. Compartilhamento com terceiros</h2>
+    <p>O provedor do Aplicativo não vende os registros de atividade armazenados no dispositivo nem os fornece a terceiros para publicidade. Os fornecedores do SDK do Google Maps, dos recursos de localização e geocodificação reversa do sistema operacional e de serviços de backup ou compartilhamento que você escolher podem tratar as informações necessárias para oferecer esses recursos. Exceto quando exigido por lei, o provedor não divulga seus dados de usuário a terceiros por iniciativa própria.</p>
+    <p>O Aplicativo não inclui SDK de publicidade ou análise comportamental operado pelo provedor. As informações tratadas pelo SDK do Google Maps para operar o serviço de mapas estão descritas acima.</p>
+
+    <h2>8. Retenção e exclusão</h2>
+    <p>Os registros de atividade permanecem no dispositivo até que você os exclua. Você pode excluir sessões individualmente no Aplicativo. Também pode apagar os dados locais nas configurações do sistema operacional ou desinstalar o Aplicativo.</p>
+    <p>O Aplicativo não consegue excluir os arquivos de backup; exclua-os do local onde foram salvos. O uso normal do Aplicativo não gera registros de atividade armazenados em um servidor do provedor. Registros ou dados mantidos pelo Google, pelo sistema operacional ou por um serviço escolhido por você seguem os procedimentos desses fornecedores.</p>
+
+    <h2>9. Segurança</h2>
+    <p>O Aplicativo armazena os registros em uma área exclusiva do Aplicativo no dispositivo e usa os recursos de proteção do sistema operacional. Não é possível garantir segurança completa do dispositivo ou das comunicações de rede. Como os backups contêm seu histórico de localização, escolha com cuidado onde salvá-los e com quem compartilhá-los.</p>
+
+    <h2>10. Privacidade de crianças</h2>
+    <p>O Aplicativo não foi desenvolvido para coletar intencionalmente informações pessoais de crianças.</p>
+
+    <h2>11. Alterações nesta Política</h2>
+    <p>Esta Política poderá ser atualizada se houver mudanças nos recursos do Aplicativo, nas práticas de tratamento de dados ou nos serviços externos. A versão vigente será publicada nesta página.</p>
+
+    <h2>12. Contato</h2>
+    <p>Se tiver dúvidas sobre esta Política, entre em contato conosco abaixo. Se você nos enviar um e-mail, trataremos o endereço e a mensagem fornecidos para responder e gerenciar sua solicitação.</p>
+    <div class="contact"><p><strong>Aplicativo:</strong> Tile Trails</p><p><strong>Provedor:</strong> kb apps</p><p><strong>Contato:</strong> <a href="mailto:support.ytmp@gmail.com">support.ytmp@gmail.com</a></p></div>
+  </main>
+</body>
+</html>
