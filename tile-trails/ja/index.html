@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f3">
+  <meta name="description" content="歩く、走る、自転車、ドライブ。Tile Trailsは移動の軌跡と訪れた六角形Tileを地図に記録する、ローカルファーストのアクティビティログです。">
+  <title>Tile Trails — 移動が、地図を埋めていく。</title>
+  <link rel="icon" href="../assets/common/app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Tile Trails トップ">
+        <img src="../assets/common/app-icon.svg" alt="" width="38" height="38">
+        <span>Tile Trails</span>
+      </a>
+      <nav class="nav" aria-label="メインナビゲーション">
+        <a href="#how-it-works">記録のしくみ</a>
+        <a href="#features">できること</a>
+        <a class="nav-cta" href="#activities">アクティビティ <span aria-hidden="true">↓</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR MOVEMENT, MAPPED</p>
+          <h1>移動が、<br><span>地図を埋めていく。</span></h1>
+          <p class="hero-lead">
+            歩く、走る、自転車、ドライブ。移動の軌跡と通った場所を六角形のTileに記録して、自分だけの地図を育てるアクティビティログです。
+          </p>
+          <div class="hero-actions">
+            <a class="button" href="#how-it-works">記録のしくみを見る <span class="button-arrow" aria-hidden="true">↓</span></a>
+            <span class="hero-note">アカウント登録なし。記録は端末内に保存。</span>
+          </div>
+          <div class="activity-tags" aria-label="記録できるアクティビティ">
+            <span>ウォーキング</span><span>ランニング</span><span>サイクリング</span><span>ドライブ</span><span>その他</span>
+          </div>
+        </div>
+
+        <figure class="map-stage" aria-label="GPSの移動軌跡と訪問済み六角形Tileを重ねた地図のイメージ">
+          <div class="map-orbit" aria-hidden="true"></div>
+          <div class="float-note float-note-left" aria-hidden="true"><b>↗</b> 移動の軌跡</div>
+          <div class="float-note float-note-right" aria-hidden="true"><b>⬡</b> 訪問したTile</div>
+          <div class="map-card">
+            <div class="map-card-head"><span>YOUR MOVEMENT MAP</span><span class="map-pill">ROUTE + TILES</span></div>
+            <svg class="map-svg" viewBox="0 0 640 430" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Tile Trailsの地図イメージ</title>
+              <desc id="map-desc">街路の上に青い移動ルートと、訪問した場所を示す緑や青の六角形タイルを重ねています。</desc>
+              <rect width="640" height="430" fill="#e9efe8"/>
+              <path d="M-20 92 C90 110 108 38 205 66 S352 122 422 74 S554 40 670 85 M-15 185 C89 152 134 225 218 197 S351 158 438 202 S568 240 663 178 M-20 315 C77 282 144 344 219 310 S350 267 440 319 S559 365 665 309 M87 -20 C62 67 108 117 83 191 S60 312 103 455 M263 -22 C300 69 236 121 274 204 S313 327 272 452 M467 -20 C424 51 487 128 451 207 S431 336 484 451 M579 -15 C532 75 600 129 568 218 S560 342 610 454" fill="none" stroke="#fff" stroke-width="13" opacity=".92"/>
+              <path d="M12 132 C102 102 113 137 164 111 S257 102 308 130 S419 145 471 113 S557 124 647 92 M16 254 C106 223 142 273 214 245 S326 222 390 260 S505 286 644 239 M145 0 C180 89 137 155 183 216 S195 340 168 432 M365 -12 C327 73 383 135 352 213 S334 338 383 442 M534 -10 C501 67 545 133 518 216 S512 338 552 444" fill="none" stroke="#d4dfd6" stroke-width="3"/>
+              <g stroke="#fff" stroke-width="3" opacity=".96">
+                <polygon points="170,87 200,104 200,138 170,155 140,138 140,104" fill="#9ed6ae"/>
+                <polygon points="230,121 260,138 260,172 230,189 200,172 200,138" fill="#5ab7a6"/>
+                <polygon points="290,155 320,172 320,206 290,223 260,206 260,172" fill="#309a96"/>
+                <polygon points="350,189 380,206 380,240 350,257 320,240 320,206" fill="#80cbaa"/>
+                <polygon points="410,223 440,240 440,274 410,291 380,274 380,240" fill="#56aa9f"/>
+                <polygon points="470,257 500,274 500,308 470,325 440,308 440,274" fill="#b1dfad"/>
+                <polygon points="110,189 140,206 140,240 110,257 80,240 80,206" fill="#c3e5bc"/>
+                <polygon points="170,223 200,240 200,274 170,291 140,274 140,240" fill="#72c4a7"/>
+                <polygon points="230,257 260,274 260,308 230,325 200,308 200,274" fill="#4ba99e"/>
+                <polygon points="290,291 320,308 320,342 290,359 260,342 260,308" fill="#aeddb7"/>
+                <polygon points="350,325 380,342 380,376 350,393 320,376 320,342" fill="#58b2a1"/>
+              </g>
+              <path d="M85 325 C125 291 145 290 170 257 S216 242 230 223 S270 190 290 189 S330 172 350 155 S391 142 410 121 S448 95 476 104" fill="none" stroke="#3182c4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="85" cy="325" r="16" fill="#55a876" stroke="#fff" stroke-width="6"/>
+              <circle cx="476" cy="104" r="16" fill="#3182c4" stroke="#fff" stroke-width="6"/>
+              <circle cx="476" cy="104" r="4" fill="#fff"/>
+            </svg>
+            <div class="map-card-foot">
+              <div class="map-legend"><span class="legend-item"><i class="legend-dot"></i>移動ルート</span><span class="legend-item"><i class="legend-dot tile-dot"></i>訪問Tile</span></div>
+              <span class="map-credit">MAP ILLUSTRATION</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Tile Trailsの主な機能">
+      <div class="container fact-list">
+        <div class="fact"><strong>移動をGPSで記録</strong><span>軌跡・距離・実運動時間</span></div>
+        <div class="fact"><strong>訪れた場所をTileに</strong><span>H3六角形で地図に蓄積</span></div>
+        <div class="fact"><strong>履歴と実績を振り返る</strong><span>期間やアクティビティで集計</span></div>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="container narrow">
+        <p class="section-kicker">YOUR OWN TILE MAP</p>
+        <h2>いつもの道も、初めての場所も。<br>移動するたび、地図に残る。</h2>
+        <p class="section-lead">
+          Tile Trailsは、移動中のGPS軌跡を記録し、通った場所をH3の六角形Tileとして地図に重ねます。
+          <strong>距離を測るだけでなく、どこを訪れたかも自分の記録に。</strong>
+        </p>
+      </div>
+    </section>
+
+    <section class="activity-section" id="activities">
+      <div class="container">
+        <div class="activity-section-inner">
+          <p class="section-kicker">CHOOSE YOUR ACTIVITY</p>
+          <h2>いつもの移動を、そのまま記録。</h2>
+          <div class="activity-row">
+            <span class="activity-chip"><i aria-hidden="true">↟</i>ウォーキング</span>
+            <span class="activity-chip"><i aria-hidden="true">⌁</i>ランニング</span>
+            <span class="activity-chip"><i aria-hidden="true">⌁</i>サイクリング</span>
+            <span class="activity-chip"><i aria-hidden="true">↗</i>車</span>
+            <span class="activity-chip"><i aria-hidden="true">＋</i>その他</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">RECORD · EXPLORE · LOOK BACK</p><h2>移動の記録は、地図の足跡に。</h2></div>
+          <p>アクティビティを選んで記録を開始。終わったら、軌跡も訪れたTileもあとから見返せます。</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">◎</span><span class="step-number">01 / RECORD</span></div>
+            <h3>アクティビティを選んで記録</h3>
+            <p>ウォーキングやサイクリングなどを選び、移動セッションを開始。一時停止や再開にも対応しています。</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">⌖</span><span class="step-number">02 / MAP</span></div>
+            <h3>軌跡と訪問Tileを保存</h3>
+            <p>移動ルートを地図上に描き、通過した場所を六角形のTileとして積み重ねます。</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">↶</span><span class="step-number">03 / REVIEW</span></div>
+            <h3>履歴やTileマップで振り返る</h3>
+            <p>セッションごとのルートや統計、期間ごとに広がる訪問範囲を確認できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">MORE THAN A TRACK</p><h2>道のりも、Tileも、<br>積み重ねて見渡す。</h2></div>
+          <p>その日の記録から、これまでに訪れた場所の広がりまで。移動の履歴をいろいろな角度から見返せます。</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-symbol" aria-hidden="true">⌖</span>
+            <h3>軌跡とセッション履歴</h3>
+            <p>地図上の移動ルートに加え、距離、実運動時間、平均速度、その回で訪れたTile数を記録します。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-symbol" aria-hidden="true">⬡</span>
+            <h3>Tileマップを集計</h3>
+            <p>全期間・年・年月やアクティビティで絞り込み、移動距離、時間、訪問Tile数などを確認できます。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-symbol" aria-hidden="true">✦</span>
+            <h3>地図で見る実績</h3>
+            <p>訪問Tileの最長直線、最大の六角形エリア、1セッションで訪れた最多Tileを振り返れます。</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-symbol" aria-hidden="true">↗</span>
+            <h3>Zipでバックアップ</h3>
+            <p>完了した移動セッションをZipファイルへ書き出し、あとから選んで復元できます。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tile-showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-copy">
+          <p class="section-kicker">A MAP THAT GROWS WITH YOU</p>
+          <h2>通った場所が、<br>自分だけの模様になる。</h2>
+          <p>同じ場所を何度も通った記録も、新しく訪れた場所も、セッションを重ねるほど地図に加わります。まだTileがない場所を見つけて、次の移動先を考える楽しみも。</p>
+          <ul class="showcase-list">
+            <li>訪れた場所をH3の六角形Tileで表示</li>
+            <li>地図の拡大・縮小に合わせてTileの粒度を切替</li>
+            <li>訪問したセッション数に応じてTileを色分け</li>
+          </ul>
+        </div>
+        <div class="stat-panel" aria-label="Tileマップで確認できる統計の例">
+          <div class="stat-panel-label"><span>YOUR TRAVEL LOG</span><span>LOCAL RECORD</span></div>
+          <div class="stat-grid">
+            <div class="stat-cell"><strong>距離</strong><span>移動の合計</span></div>
+            <div class="stat-cell"><strong>時間</strong><span>実運動時間</span></div>
+            <div class="stat-cell"><strong>Tile</strong><span>訪問エリア</span></div>
+          </div>
+          <p class="stat-panel-note">期間やアクティビティを切り替えて、移動の記録を見返せます。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section data-section" id="data">
+      <div class="container data-grid">
+        <div class="data-visual" aria-hidden="true">
+          <div class="data-orbit"></div>
+          <img class="data-icon" src="../assets/common/app-icon.svg" alt="" width="142" height="142">
+        </div>
+        <div class="data-copy">
+          <p class="section-kicker">LOCAL-FIRST BY DESIGN</p>
+          <h2>移動の記録は、<br>あなたの端末に。</h2>
+          <p>アカウント登録や独自サーバーへの同期はありません。セッション、GPS軌跡、訪問Tileは端末内に保存されます。バックアップを作るときは、Zipファイルを自分で保存・共有できます。</p>
+          <ul class="data-points">
+            <li>端末内のデータベースに記録を保存</li>
+            <li>アカウント作成やクラウド同期なし</li>
+            <li>バックアップと復元はユーザーが選んだZipファイルで</li>
+          </ul>
+          <p class="network-note">地図を表示するための地図タイル取得や、場所名の取得には外部サービスへの通信が発生する場合があります。Tile Trailsは完全オフラインアプリではありません。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-box">
+        <div>
+          <p class="section-kicker">MAKE YOUR MAP YOURS</p>
+          <h2>次の移動を、自分の地図に。</h2>
+          <p>いつもの道を記録して、まだ知らないTileを見つけてみよう。</p>
+        </div>
+        <a class="button" href="#how-it-works">記録のしくみを見る <span class="button-arrow" aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="../assets/common/app-icon.svg" alt="" width="31" height="31"><span>Tile Trails</span></div>
+      <div class="footer-links"><a href="#data">データについて</a><a href="../en/" lang="en">English</a></div>
+      <p>© kb apps</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f8f3">
+  <meta name="description" content="Record your routes and visited hexagonal Tiles as you walk, run, cycle, or drive. Tile Trails is a local-first activity log that grows into your own map.">
+  <title>Tile Trails — Your movement, mapped.</title>
+  <link rel="icon" href="../assets/common/app-icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Tile Trails home"><img src="../assets/common/app-icon.svg" alt="" width="38" height="38"><span>Tile Trails</span></a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#features">Features</a>
+        <a class="nav-cta" href="#activities">Activities <span aria-hidden="true">↓</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">YOUR MOVEMENT, MAPPED</p>
+          <h1>Your movement,<br><span>mapped tile by tile.</span></h1>
+          <p class="hero-lead">Walk, run, cycle, or drive. Record your route and the places you pass as hexagonal Tiles, then watch your own map take shape.</p>
+          <div class="hero-actions">
+            <a class="button" href="#how-it-works">See how it works <span class="button-arrow" aria-hidden="true">↓</span></a>
+            <span class="hero-note">No account. Your records stay on your device.</span>
+          </div>
+          <div class="activity-tags" aria-label="Activities you can record">
+            <span>Walking</span><span>Running</span><span>Cycling</span><span>Driving</span><span>Other</span>
+          </div>
+        </div>
+
+        <figure class="map-stage" aria-label="Illustration of a GPS route and visited hexagonal Tiles on a map">
+          <div class="map-orbit" aria-hidden="true"></div>
+          <div class="float-note float-note-left" aria-hidden="true"><b>↗</b> Your route</div>
+          <div class="float-note float-note-right" aria-hidden="true"><b>⬡</b> Visited Tiles</div>
+          <div class="map-card">
+            <div class="map-card-head"><span>YOUR MOVEMENT MAP</span><span class="map-pill">ROUTE + TILES</span></div>
+            <svg class="map-svg" viewBox="0 0 640 430" role="img" aria-labelledby="map-title map-desc">
+              <title id="map-title">Tile Trails map illustration</title>
+              <desc id="map-desc">A blue route runs across green and teal hexagons marking visited areas.</desc>
+              <rect width="640" height="430" fill="#e9efe8"/>
+              <path d="M-20 92 C90 110 108 38 205 66 S352 122 422 74 S554 40 670 85 M-15 185 C89 152 134 225 218 197 S351 158 438 202 S568 240 663 178 M-20 315 C77 282 144 344 219 310 S350 267 440 319 S559 365 665 309 M87 -20 C62 67 108 117 83 191 S60 312 103 455 M263 -22 C300 69 236 121 274 204 S313 327 272 452 M467 -20 C424 51 487 128 451 207 S431 336 484 451 M579 -15 C532 75 600 129 568 218 S560 342 610 454" fill="none" stroke="#fff" stroke-width="13" opacity=".92"/>
+              <path d="M12 132 C102 102 113 137 164 111 S257 102 308 130 S419 145 471 113 S557 124 647 92 M16 254 C106 223 142 273 214 245 S326 222 390 260 S505 286 644 239 M145 0 C180 89 137 155 183 216 S195 340 168 432 M365 -12 C327 73 383 135 352 213 S334 338 383 442 M534 -10 C501 67 545 133 518 216 S512 338 552 444" fill="none" stroke="#d4dfd6" stroke-width="3"/>
+              <g stroke="#fff" stroke-width="3" opacity=".96">
+                <polygon points="170,87 200,104 200,138 170,155 140,138 140,104" fill="#9ed6ae"/>
+                <polygon points="230,121 260,138 260,172 230,189 200,172 200,138" fill="#5ab7a6"/>
+                <polygon points="290,155 320,172 320,206 290,223 260,206 260,172" fill="#309a96"/>
+                <polygon points="350,189 380,206 380,240 350,257 320,240 320,206" fill="#80cbaa"/>
+                <polygon points="410,223 440,240 440,274 410,291 380,274 380,240" fill="#56aa9f"/>
+                <polygon points="470,257 500,274 500,308 470,325 440,308 440,274" fill="#b1dfad"/>
+                <polygon points="110,189 140,206 140,240 110,257 80,240 80,206" fill="#c3e5bc"/>
+                <polygon points="170,223 200,240 200,274 170,291 140,274 140,240" fill="#72c4a7"/>
+                <polygon points="230,257 260,274 260,308 230,325 200,308 200,274" fill="#4ba99e"/>
+                <polygon points="290,291 320,308 320,342 290,359 260,342 260,308" fill="#aeddb7"/>
+                <polygon points="350,325 380,342 380,376 350,393 320,376 320,342" fill="#58b2a1"/>
+              </g>
+              <path d="M85 325 C125 291 145 290 170 257 S216 242 230 223 S270 190 290 189 S330 172 350 155 S391 142 410 121 S448 95 476 104" fill="none" stroke="#3182c4" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="85" cy="325" r="16" fill="#55a876" stroke="#fff" stroke-width="6"/>
+              <circle cx="476" cy="104" r="16" fill="#3182c4" stroke="#fff" stroke-width="6"/>
+              <circle cx="476" cy="104" r="4" fill="#fff"/>
+            </svg>
+            <div class="map-card-foot">
+              <div class="map-legend"><span class="legend-item"><i class="legend-dot"></i>Recorded route</span><span class="legend-item"><i class="legend-dot tile-dot"></i>Visited Tile</span></div>
+              <span class="map-credit">MAP ILLUSTRATION</span>
+            </div>
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <section class="quick-facts" aria-label="Tile Trails highlights">
+      <div class="container fact-list">
+        <div class="fact"><strong>GPS activity logs</strong><span>Route, distance, and moving time</span></div>
+        <div class="fact"><strong>Visited places become Tiles</strong><span>Hexagons build up on your map</span></div>
+        <div class="fact"><strong>History and achievements</strong><span>Explore your records by activity or time</span></div>
+      </div>
+    </section>
+
+    <section class="section intro-section">
+      <div class="container narrow">
+        <p class="section-kicker">YOUR OWN TILE MAP</p>
+        <h2>Familiar roads and new places.<br>Each trip leaves a mark.</h2>
+        <p class="section-lead">Tile Trails records your GPS route and layers the places you pass onto a map as H3 hexagonal Tiles. <strong>Keep track of where you went, as well as how far.</strong></p>
+      </div>
+    </section>
+
+    <section class="activity-section" id="activities">
+      <div class="container">
+        <div class="activity-section-inner">
+          <p class="section-kicker">CHOOSE YOUR ACTIVITY</p>
+          <h2>Record the way you move.</h2>
+          <div class="activity-row">
+            <span class="activity-chip"><i aria-hidden="true">↟</i>Walking</span>
+            <span class="activity-chip"><i aria-hidden="true">⌁</i>Running</span>
+            <span class="activity-chip"><i aria-hidden="true">⌁</i>Cycling</span>
+            <span class="activity-chip"><i aria-hidden="true">↗</i>Driving</span>
+            <span class="activity-chip"><i aria-hidden="true">＋</i>Other</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section flow-section" id="how-it-works">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">RECORD · EXPLORE · LOOK BACK</p><h2>Every route leaves a trail on your map.</h2></div>
+          <p>Choose an activity and start a session. When you finish, revisit both your route and the Tiles you explored.</p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">◎</span><span class="step-number">01 / RECORD</span></div>
+            <h3>Choose an activity and record</h3>
+            <p>Pick walking, cycling, or another activity and start a session. You can pause and resume as you go.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">⌖</span><span class="step-number">02 / MAP</span></div>
+            <h3>Save your route and visited Tiles</h3>
+            <p>Your route appears on the map as the places you pass build up into hexagonal Tiles.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-top"><span class="step-icon" aria-hidden="true">↶</span><span class="step-number">03 / REVIEW</span></div>
+            <h3>Look back in History and Tile Map</h3>
+            <p>Review individual routes and stats, or see how your visited areas grow over time.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section feature-section" id="features">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="section-kicker">MORE THAN A TRACK</p><h2>Routes, Tiles, and all the miles between.</h2></div>
+          <p>Look back on a single outing or explore the places you have visited over time.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">⌖</span><h3>Routes and session history</h3><p>Keep your route, distance, moving time, average speed, and unique Tiles for each session.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">⬡</span><h3>Filter and explore your Tile Map</h3><p>Filter by all time, year, month, and activity. See distance, time, and Tile totals for each view.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">✦</span><h3>Achievements on the map</h3><p>Find your longest straight line of Tiles, largest hexagon, and most Tiles explored in one session.</p></article>
+          <article class="feature-card"><span class="feature-symbol" aria-hidden="true">↗</span><h3>Zip backups</h3><p>Export completed activity sessions to a Zip file and restore them when you choose.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section tile-showcase">
+      <div class="container showcase-grid">
+        <div class="showcase-copy">
+          <p class="section-kicker">A MAP THAT GROWS WITH YOU</p>
+          <h2>The places you visit<br>become your own pattern.</h2>
+          <p>Repeated routes and new places both add to your map as you record more sessions. Look for gaps in your Tile Map and find somewhere new to go next.</p>
+          <ul class="showcase-list">
+            <li>Visited places appear as H3 hexagonal Tiles</li>
+            <li>Tile detail changes as you zoom in and out</li>
+            <li>Tiles are colored by the number of sessions that visited them</li>
+          </ul>
+        </div>
+        <div class="stat-panel" aria-label="Examples of stats available in Tile Map">
+          <div class="stat-panel-label"><span>YOUR TRAVEL LOG</span><span>ON YOUR DEVICE</span></div>
+          <div class="stat-grid">
+            <div class="stat-cell"><strong>Distance</strong><span>Travelled</span></div>
+            <div class="stat-cell"><strong>Time</strong><span>In motion</span></div>
+            <div class="stat-cell"><strong>Tiles</strong><span>Explored</span></div>
+          </div>
+          <p class="stat-panel-note">Switch the time period or activities to look back on different parts of your log.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section data-section" id="data">
+      <div class="container data-grid">
+        <div class="data-visual" aria-hidden="true">
+          <div class="data-orbit"></div>
+          <img class="data-icon" src="../assets/common/app-icon.svg" alt="" width="142" height="142">
+        </div>
+        <div class="data-copy">
+          <p class="section-kicker">LOCAL-FIRST BY DESIGN</p>
+          <h2>Your movement log<br>stays on your device.</h2>
+          <p>There are no accounts or sync to a Tile Trails server. Sessions, GPS routes, and visited Tiles are stored on your device. You can save or share a Zip backup when you choose.</p>
+          <ul class="data-points">
+            <li>Activity data is stored in a local database</li>
+            <li>No account or cloud sync</li>
+            <li>Back up and restore with a Zip file you choose</li>
+          </ul>
+          <p class="network-note">Tile map display may request map tiles from external services, and place names may use your operating system's reverse geocoding. Tile Trails is not a fully offline app.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container cta-box">
+        <div>
+          <p class="section-kicker">MAKE YOUR MAP YOURS</p>
+          <h2>Let your next trip fill in the map.</h2>
+          <p>Record a familiar route, then find a Tile you have not visited yet.</p>
+        </div>
+        <a class="button" href="#how-it-works">See how it works <span class="button-arrow" aria-hidden="true">↑</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-brand"><img src="../assets/common/app-icon.svg" alt="" width="31" height="31"><span>Tile Trails</span></div>
+      <div class="footer-links"><a href="#data">About your data</a><a href="../ja/" lang="ja">日本語</a></div>
+      <p>© kb apps</p>
+    </div>
+  </footer>
+</body>
+</html>

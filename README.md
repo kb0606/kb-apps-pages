@@ -171,6 +171,13 @@ Git LFS のポインタファイルをそのまま GitHub Pages から参照す�
 - 言語メニュー: `yatta-mon/assets/common/language-picker.css`
 - 内容の根拠: `kb0606/yatta-mon` の `docs/product.md`、`README.md`、課金プロバイダー
 
-現状、ヤッタモンの実スクリーンショットは公開用アセットとして取り込んでいません。Git LFS 管理下の画像ポインタを公開用画像として使わないようにし、現時点ではイラストで表現しています。Google Play の公開 URL が確定したら、その正規リンクを追加してください。
+日本語・英語の紹介ページには実アプリのスクリーンショットを掲載しています。日本語ページの画像は Git LFS ポインタのため、現在は `media.githubusercontent.com` 経由で参照しています。英語ページの画像は通常の Git blob として保存しています。Google Play の公開 URL が確定したら、その正規リンクを追加してください。
 
-`yatta-mon/` 以下に画像を追加する際は、GitHub Pages 配信対象を通常の Git blob にするため、`.gitattributes` に `yatta-mon/assets/** -filter -diff -merge -text` を追加してください。
+## Tile Trails 紹介ページ
+
+`tile-trails/` にはTile Trailsの紹介ページを日本語と英語で用意しています。
+
+- トップの `index.html` はブラウザの言語設定に応じて日本語または英語へ振り分けます。
+- ページ本文は `ja/index.html` と `en/index.html`、共通スタイルは `style.css` にあります。
+- プライバシーポリシーは `/tile-trails/privacy-policy/` にあります。
+- フィーチャー画像など、GitHub Pages から配信する `assets/` 内の画像は通常の Git blob として保存します。
