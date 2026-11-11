@@ -4,19 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#2e8198">
-  <meta name="description" content="Trips, hikes, weekend adventures and everyday moments. Save your experiences with photos, dates and notes, then enjoy rediscovering them.">
-  <title>Yatta-Mon — Keep what you've done,remember how it felt.</title>
+  <meta name="description" content="Save trips, hikes, weekends and everyday experiences with photos and notes. Revisit your memories in a timeline, album, calendar or map.">
+  <title>YattaMon — Keep the moments you enjoy</title>
   <link rel="stylesheet" href="../assets/common/language-picker.css">
   <link rel="stylesheet" href="../style.css">
+  <link rel="icon" type="image/png" href="../assets/common/app-icon.png">
+  <link rel="preconnect" href="https://media.githubusercontent.com">
 </head>
-<body>
+<body class="locale-en">
   <header class="site-header">
     <div class="container header-inner">
-      <a class="brand" href="./" aria-label="Yatta-Mon">
-        <b class="brand-mark" aria-hidden="true">Y</b><span>Yatta-Mon</span>
+      <a class="brand" href="./" aria-label="YattaMon">
+        <img src="../assets/common/app-icon.png" alt="" width="42" height="42" decoding="async"><span>YattaMon</span>
       </a>
       <nav class="nav" aria-label="Main navigation">
-        <a href="#overview">Features</a><a href="#record">How it works</a><a href="#privacy">Privacy</a><a href="#premium">Pricing</a>
+        <a href="#timeline">Timeline</a><a href="#photos">Photos</a><a href="#map">Map</a><a href="#premium">Pricing</a>
       </nav>
       <details class="language-picker">
         <summary aria-label="Language">
@@ -41,74 +43,213 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <p class="eyebrow">Yatta-Mon · EXPERIENCE & PHOTO JOURNAL</p>
-          <h1><span class="hero-title-first">Keep what you've done,</span><br><span>remember how it felt.</span></h1>
-          <p class="hero-lead">Trips, hikes, weekend adventures and everyday moments. Save your experiences with photos, dates and notes, then enjoy rediscovering them.</p>
-          <div class="hero-actions"><span class="availability">Built for Android</span></div>
+          <p class="eyebrow">YattaMon · EXPERIENCE &amp; PHOTO JOURNAL</p>
+          <h1><span class="hero-title-first">Keep the moments you enjoy,</span><br><span>with photos to look back on.</span></h1>
+          <p class="hero-lead">From trips and hikes to ordinary weekends, save each experience with photos and notes, then enjoy looking back on it.</p>
+          <div class="hero-actions"><span class="availability">In development for Android</span></div>
         </div>
-        <div class="hero-visual" aria-hidden="true">
-          <div class="hero-glow"></div>
-          <div class="hero-photo-board">
-            <div class="polaroid polaroid-trip"><span>✈️</span></div>
-            <div class="polaroid polaroid-nature"><span>⛰️</span></div>
-            <div class="polaroid polaroid-food"><span>🍽️</span></div>
-            <div class="album-label"><b>Yatta-Mon</b><small>YOUR PHOTO JOURNAL</small></div>
-          </div>
+        <div class="hero-visual">
+          <div class="hero-glow" aria-hidden="true"></div>
+          <img class="character-hero" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/common/yatta-mon_character.png" alt="YattaMon character" width="380" height="380" fetchpriority="high" decoding="async">
         </div>
       </div>
     </section>
-    <section class="category-strip" aria-label="Categories"><div class="container category-list"><span>Travel &amp; outings</span><span>Outdoors</span><span>Sports</span><span>Food</span><span>Learning</span><span>Making</span><span>Events</span><span>Social</span><span>Everyday life</span></div></section>
+    <section class="category-strip" aria-label="Experience categories"><div class="container category-list"><span>Travel &amp; outings</span><span>Outdoors</span><span>Sports</span><span>Food</span><span>Learning</span><span>Making</span><span>Events</span><span>Social</span><span>Everyday life</span></div></section>
     <section class="section intro-section" id="overview">
       <div class="container narrow">
         <p class="section-kicker">LOOK BACK</p>
-        <h2>Your experiences, your own photo journal.</h2>
-        <p class="section-lead">The places you visited, first-time adventures and shared moments. Yatta-Mon helps you save every experience and <strong>rediscover it through photos, calendars and maps.</strong></p>
+        <h2>Turn what you do into a photo journal of your own.</h2>
+        <p class="section-lead">Places you've visited, new things you've tried, and time spent with friends. Save each experience and <strong>revisit it through photos, calendars and maps.</strong></p>
       </div>
     </section>
     <section class="section features-section">
       <div class="container">
         <div class="section-heading">
-          <div><p class="section-kicker">ALL IN ONE</p><h2>Record the moment. Relive the memory.</h2></div>
-          <p>Everything you need to look back on the things you've done.</p>
+          <div><p class="section-kicker">ALL IN ONE</p><h2>Save each experience. Find it again in photos.</h2></div>
         </div>
-        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><span class="feature-icon" aria-hidden="true">📔</span><h3>A record for every experience</h3><p>Save titles, dates or ranges, places, notes, categories, tags and the people who joined you.</p></article>
-        <article class="feature-card"><span class="feature-number">02</span><span class="feature-icon" aria-hidden="true">📸</span><h3>Up to 20 photos per entry</h3><p>Choose a cover photo, keep pictures in capture-date order, and zoom in to enjoy every detail.</p></article>
-        <article class="feature-card"><span class="feature-number">03</span><span class="feature-icon" aria-hidden="true">🖼️</span><h3>A photo-first gallery</h3><p>Browse photos grouped by experience, then search and filter to find a moment again.</p></article>
-        <article class="feature-card"><span class="feature-number">04</span><span class="feature-icon" aria-hidden="true">🗺️</span><h3>See your memories on a map</h3><p>When your photos include GPS data, revisit the places behind your experiences.</p></article>
-        <article class="feature-card"><span class="feature-number">05</span><span class="feature-icon" aria-hidden="true">📅</span><h3>Calendar and highlights</h3><p>Look back at activity counts, first-time experiences, ratings and personal trends.</p></article>
-        <article class="feature-card"><span class="feature-number">06</span><span class="feature-icon" aria-hidden="true">✨</span><h3>Collages and backups</h3><p>Share a photo collage and export or restore your records, including pictures, in a ZIP backup.</p></article></div>
+        <div class="feature-grid"><article class="feature-card"><span class="feature-number">01</span><span class="feature-icon" aria-hidden="true">📔</span><h3>A clear record of each experience</h3><p>Keep what you did, when and where, your notes, tags, and the people you shared it with.</p></article>
+        <article class="feature-card"><span class="feature-number">02</span><span class="feature-icon" aria-hidden="true">📸</span><h3>Up to 20 photos per experience</h3><p>Choose a cover photo and keep the pictures from each experience together.</p></article>
+        <article class="feature-card"><span class="feature-number">03</span><span class="feature-icon" aria-hidden="true">🖼️</span><h3>A photo album for every experience</h3><p>Browse photos grouped by experience, then search or filter to find a memory again.</p></article>
+        <article class="feature-card"><span class="feature-number">04</span><span class="feature-icon" aria-hidden="true">🗺️</span><h3>Look back on places on a map</h3><p>When a photo has GPS data, see where it was taken and explore nearby memories.</p></article>
+        <article class="feature-card"><span class="feature-number">05</span><span class="feature-icon" aria-hidden="true">📅</span><h3>Highlights</h3><p>Look back on your experiences, firsts, ratings, and the moments that made your year.</p></article>
+        <article class="feature-card"><span class="feature-number">06</span><span class="feature-icon" aria-hidden="true">✨</span><h3>Photo collages to share</h3><p>Combine photos into one image and share a favorite memory with friends.</p></article></div>
+      </div>
+    </section>
+    <section class="section app-flow-section screenshot-sections" id="timeline">
+      <div class="container">
+        <div class="section-heading"><div><p class="section-kicker">APP SCREENS</p></div></div>
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">Timeline</span>
+            <h3>See everything you've done,<br>at a glance.</h3>
+            <p>Browse experiences in chronological order. Choose one of four layouts to focus on photos or details.</p>
+            <ul class="feature-list">
+              <li>Thumbnail, photo grid, standard and compact views</li>
+              <li>Sort by date or rating</li>
+              <li>Filter by categories and tags</li>
+            </ul>
+          </div>
+          <div class="capture-carousel" data-carousel aria-label="Timeline layouts">
+            <div class="carousel-viewport" tabindex="0">
+              <div class="carousel-track">
+                <figure class="carousel-slide" data-label="Thumbnail view">
+                  <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/timeline-thumbnail.webp" alt="YattaMon timeline in thumbnail view" loading="lazy" decoding="async"></div>
+                  <figcaption>Photos and details, side by side</figcaption>
+                </figure>
+                <figure class="carousel-slide" data-label="Photo grid view">
+                  <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/timeline-grid.webp" alt="YattaMon timeline in photo grid view" loading="lazy" decoding="async"></div>
+                  <figcaption>Browse your memories by photo</figcaption>
+                </figure>
+                <figure class="carousel-slide" data-label="Standard view">
+                  <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/timeline-normal.webp" alt="YattaMon timeline in standard view" loading="lazy" decoding="async"></div>
+                  <figcaption>See the details of each experience</figcaption>
+                </figure>
+                <figure class="carousel-slide" data-label="Compact view">
+                  <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/timeline-compact.webp" alt="YattaMon timeline in compact view" loading="lazy" decoding="async"></div>
+                  <figcaption>See more experiences at once</figcaption>
+                </figure>
+              </div>
+              <button class="carousel-arrow carousel-arrow-prev" type="button" aria-label="Previous timeline view"><span aria-hidden="true">‹</span></button>
+              <button class="carousel-arrow carousel-arrow-next" type="button" aria-label="Next timeline view"><span aria-hidden="true">›</span></button>
+            </div>
+            <div class="carousel-meta" aria-live="polite"><strong class="carousel-current-label">Thumbnail view</strong></div>
+            <div class="carousel-dots" role="group" aria-label="Choose a timeline view">
+              <button type="button" class="carousel-dot is-active" aria-label="Thumbnail view" aria-current="true"></button>
+              <button type="button" class="carousel-dot" aria-label="Photo grid view"></button>
+              <button type="button" class="carousel-dot" aria-label="Standard view"></button>
+              <button type="button" class="carousel-dot" aria-label="Compact view"></button>
+            </div>
+          </div>
+        </div>
+        <div class="experience-step experience-step-reverse" id="photos">
+          <div class="step-copy">
+            <span class="step-badge">Photos &amp; entry details</span>
+            <h3>Relive the experience,<br>one photo at a time.</h3>
+            <p>Browse photos grouped by experience, then open an entry to revisit its pictures, notes, location and rating.</p>
+            <ul class="feature-list">
+              <li>Up to 20 photos in each experience</li>
+              <li>Full-screen photos with pinch-to-zoom</li>
+              <li>Choose a cover photo for each entry</li>
+            </ul>
+          </div>
+          <div class="capture-pair">
+            <figure class="capture-block capture-block-small">
+              <a class="screenshot-link" href="../assets/en/screens/photos.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the photo gallery screenshot">
+                <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/photos.webp" alt="YattaMon photo gallery grouped by experience" loading="lazy" decoding="async"></div>
+              </a>
+              <figcaption>Browse photos from each experience</figcaption>
+            </figure>
+            <figure class="capture-block capture-block-small">
+              <a class="screenshot-link" href="../assets/en/screens/detail.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the experience details screenshot">
+                <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/detail.webp" alt="YattaMon experience details with photos and notes" loading="lazy" decoding="async"></div>
+              </a>
+              <figcaption>See photos, notes and ratings together</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="experience-step">
+          <div class="step-copy">
+            <span class="step-badge">Search &amp; calendar</span>
+            <h3>Find a memory by<br>what or when.</h3>
+            <p>Search by name or place, then filter by category, tag, companion or first-time experience. Use the calendar to browse by date.</p>
+            <ul class="feature-list">
+              <li>Search by keyword, category or tag</li>
+              <li>Filter by companions or firsts</li>
+              <li>Browse by date or date range</li>
+            </ul>
+          </div>
+          <div class="capture-pair">
+            <figure class="capture-block capture-block-small">
+              <a class="screenshot-link" href="../assets/en/screens/filter.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the search and filter screenshot">
+                <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/filter.webp" alt="YattaMon search and filter screen" loading="lazy" decoding="async"></div>
+              </a>
+              <figcaption>Search and filter experiences</figcaption>
+            </figure>
+            <figure class="capture-block capture-block-small capture-lift">
+              <a class="screenshot-link" href="../assets/en/screens/calendar.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the calendar screenshot">
+                <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/calendar.webp" alt="YattaMon calendar view" loading="lazy" decoding="async"></div>
+              </a>
+              <figcaption>Find memories by date</figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="experience-step experience-step-reverse" id="map">
+          <div class="step-copy">
+            <span class="step-badge">Map</span>
+            <h3>Look back on the places<br>you've been.</h3>
+            <p>When your photos include location data, see where each memory happened. Tap a record on the map to open its details.</p>
+            <ul class="feature-list">
+              <li>Uses GPS data saved in photos</li>
+              <li>Shows experiences by place</li>
+              <li>Doesn't use your device's live location</li>
+            </ul>
+          </div>
+          <figure class="capture-block">
+            <a class="screenshot-link" href="../assets/en/screens/map.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the map screenshot">
+              <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/map.webp" alt="YattaMon map showing places from photo GPS data" loading="lazy" decoding="async"></div>
+            </a>
+            <figcaption>Revisit the places behind your photos</figcaption>
+          </figure>
+        </div>
       </div>
     </section>
     <section class="section highlight-section" id="highlight">
-      <div class="container highlight-grid">
+      <div class="container highlight-showcase">
         <div class="highlight-copy">
           <p class="section-kicker section-kicker-light">PHOTO JOURNAL</p>
-          <h2>The more photos you save,<br>the more memories return.</h2>
-          <p>Explore your story as a timeline, a photo album or a map. Find the way back to each memory that feels right.</p>
+          <h2>The more you save,<br>the more you can remember.</h2>
+          <p>Follow your experiences in a timeline, browse photos like an album, or revisit places on a map.</p>
           <div class="highlight-tags"><span>Timeline</span><span>Photos</span><span>Map</span><span>Highlights</span></div>
         </div>
-        <div class="memory-tiles" aria-label="Illustration"><div class="memory-tile memory-tile-1"><span aria-hidden="true">📷</span><strong>Browse by photo</strong></div><div class="memory-tile memory-tile-2"><span aria-hidden="true">📍</span><strong>Explore by place</strong></div><div class="memory-tile memory-tile-3"><span aria-hidden="true">📈</span><strong>Discover patterns</strong></div></div>
+        <figure class="capture-block capture-highlight">
+          <a class="screenshot-link" href="../assets/en/screens/highlight.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the highlights screenshot">
+            <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/highlight.webp" alt="YattaMon experience highlights and statistics" loading="lazy" decoding="async"></div>
+          </a>
+          <figcaption>Look back on your experiences and ratings</figcaption>
+        </figure>
       </div>
     </section>
     <section class="section app-flow-section" id="record">
       <div class="container">
         <div class="experience-step">
           <div class="step-copy">
-            <span class="step-badge">EASY TO RECORD</span>
-            <h2>Quick to save. Wonderful to revisit.</h2>
-            <p class="section-lead">Start with what you did, then add a date and photos. Include impressions, satisfaction, whether it was your first time and whether you'd do it again.</p>
-            <ul class="feature-list"><li>One entry for each experience</li><li>Organize with categories, tags and companions</li><li>Remember ratings and repeat intentions</li></ul>
+            <span class="step-badge">Easy to record</span>
+            <h2>Save it now. Enjoy it again later.</h2>
+            <p class="section-lead">Start with what you did, then add a date and photos. Keep notes, ratings, first-time moments and whether you'd do it again.</p>
+            <ul class="feature-list">
+              <li>One entry for each experience</li>
+              <li>Organize with categories, tags and companions</li>
+              <li>Save ratings and whether you'd do it again</li>
+            </ul>
           </div>
-          <div class="example-card" aria-label="Illustrative example">
-            <div class="example-top">Illustrative example</div>
-            <div class="example-art" aria-hidden="true"><span>🥾</span><span>🌲</span><span>☀️</span></div>
-            <div class="example-copy">
-              <strong>Weekend hike</strong>
-              <span>Date · Place · Photos</span>
-              <em>Would do again</em>
-            </div>
-            <small>Illustration only — not an actual app screenshot.</small>
+          <figure class="capture-block">
+            <a class="screenshot-link" href="../assets/en/screens/record-form.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the new entry form screenshot">
+              <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/record-form.webp" alt="YattaMon form for adding an experience" loading="lazy" decoding="async"></div>
+            </a>
+            <figcaption>Add a title, date, photos and notes</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section app-flow-section" id="share">
+      <div class="container">
+        <div class="experience-step experience-step-reverse">
+          <div class="step-copy">
+            <span class="step-badge">Photo sharing</span>
+            <h3>Bring your favorite photos<br>together in a collage.</h3>
+            <p>Make a collage from the photos in an experience. Try different layouts, then save or share the finished image.</p>
+            <ul class="feature-list">
+              <li>Combine photos from an entry</li>
+              <li>Choose from different layouts</li>
+              <li>Save and share the finished image</li>
+            </ul>
           </div>
+          <figure class="capture-block">
+            <a class="screenshot-link" href="../assets/en/screens/share_photo.webp" target="_blank" rel="noopener noreferrer" aria-label="Open the photo collage screenshot">
+              <div class="phone-frame"><div class="phone-speaker"></div><img class="capture-image" src="../assets/en/screens/share_photo.webp" alt="YattaMon photo collage ready to save or share" loading="lazy" decoding="async"></div>
+            </a>
+            <figcaption>Bring several memories together in one image</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -116,10 +257,10 @@
       <div class="container ownership-grid">
         <div class="icon-stage" aria-hidden="true"><div class="icon-ring"></div><div class="shield-mark">🔒</div></div>
         <div class="ownership-copy">
-          <p class="section-kicker">PRIVACY & YOUR DATA</p>
+          <p class="section-kicker">PRIVACY &amp; YOUR DATA</p>
           <h2>Your memories stay<br>on your device.</h2>
-          <p>No account or cloud sync required. Your records and photos are saved on your device, with optional ZIP backups. Maps use Google Maps when displaying locations from photo GPS data.</p>
-          <div class="mini-points"><div><strong>On-device storage</strong><span>No cloud sync</span></div><div><strong>Your own backups</strong><span>Export and restore ZIP</span></div><div><strong>No live location tracking</strong><span>Uses GPS in photos</span></div></div>
+          <p>Your records and photos stay on your device. No account or cloud sync is needed. Export or restore a ZIP backup whenever you choose.</p>
+          <div class="mini-points"><div><strong>Saved on your device</strong><span>No cloud sync</span></div><div><strong>Your own backups</strong><span>ZIP export &amp; restore</span></div><div><strong>No live location tracking</strong><span>Uses GPS data in photos</span></div></div>
         </div>
       </div>
     </section>
@@ -148,15 +289,15 @@
     </section>
     <section class="section final-cta">
       <div class="container cta-box">
-        <div class="cta-mark" aria-hidden="true">Y</div>
-        <div><p class="section-kicker">Yatta-Mon</p><h2>Every experience deserves a place to live.</h2><p>Build a photo journal you'll love looking back on.</p></div>
-        <span class="cta-status">Built for Android</span>
+        <img class="character-cta" src="https://media.githubusercontent.com/media/kb0606/kb-apps-pages/main/yatta-mon/assets/common/yatta-mon_character.png" alt="" width="112" height="112" loading="lazy" decoding="async">
+        <div><p class="section-kicker">YattaMon</p><h2>Keep the moments you've lived,<br>with photos to look back on.</h2></div>
+        <span class="cta-status">In development for Android</span>
       </div>
     </section>
   </main>
   <footer class="site-footer">
     <div class="container footer-inner footer-inner-no-languages">
-      <div class="footer-brand"><b class="brand-mark" aria-hidden="true">Y</b><span>Yatta-Mon — Experience &amp; Photo Journal</span></div>
+      <div class="footer-brand"><img src="../assets/common/app-icon.png" alt="" width="36" height="36" loading="lazy" decoding="async"><span>YattaMon — Your experience &amp; photo journal</span></div>
       <div class="footer-links">
         <a href="#privacy">Privacy</a>
         <a href="mailto:support.ytmp@gmail.com">Contact</a>
@@ -164,5 +305,6 @@
       <p>© kb apps</p>
     </div>
   </footer>
+  <script src="../assets/common/screenshot-carousel.js" defer></script>
 </body>
 </html>

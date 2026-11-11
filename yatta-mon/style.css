@@ -1538,8 +1538,8 @@ body.locale-ja [id] { scroll-margin-top: 94px; }
  .screenshot-sections .section-heading { margin-bottom: 14px; }
 }
 
-/* Japanese page: Yatta-Mon character hero and app icon. */
-body.locale-ja .hero-visual .character-hero {
+/* Japanese and English pages: YattaMon character art and app icon. */
+body:is(.locale-ja, .locale-en) .hero-visual .character-hero {
   position: relative;
   z-index: 1;
   display: block;
@@ -1551,86 +1551,86 @@ body.locale-ja .hero-visual .character-hero {
   box-shadow: none;
   object-fit: contain;
 }
-body.locale-ja .cta-box .character-cta {
+body:is(.locale-ja, .locale-en) .cta-box .character-cta {
   border-radius: 0;
   background: transparent;
   box-shadow: none;
   object-fit: contain;
 }
 @media (max-width:640px) {
-  body.locale-ja .hero-visual .character-hero { width: min(100%, 260px); }
+  body:is(.locale-ja, .locale-en) .hero-visual .character-hero { width: min(100%, 260px); }
 }
 
-/* Japanese landing page: trim cumulative vertical spacing while keeping sections distinct. */
-body.locale-ja .hero {
+/* Japanese and English landing pages: trim cumulative spacing while keeping sections distinct. */
+body:is(.locale-ja, .locale-en) .hero {
   padding-block: 64px 42px;
 }
-body.locale-ja .hero-lead {
+body:is(.locale-ja, .locale-en) .hero-lead {
   margin-top: 22px;
 }
-body.locale-ja .hero-actions {
+body:is(.locale-ja, .locale-en) .hero-actions {
   margin-top: 26px;
 }
-body.locale-ja .section {
+body:is(.locale-ja, .locale-en) .section {
   padding-block: 52px;
 }
-body.locale-ja .section.highlight-section {
+body:is(.locale-ja, .locale-en) .section.highlight-section {
   padding-bottom: 24px;
 }
-body.locale-ja .section.ownership-section {
+body:is(.locale-ja, .locale-en) .section.ownership-section {
   padding-top: 36px;
 }
-body.locale-ja .intro-section .section-lead {
+body:is(.locale-ja, .locale-en) .intro-section .section-lead {
   margin-top: 20px;
 }
-body.locale-ja .section-heading {
+body:is(.locale-ja, .locale-en) .section-heading {
   margin-bottom: 32px;
 }
-body.locale-ja .feature-card .feature-icon {
+body:is(.locale-ja, .locale-en) .feature-card .feature-icon {
   margin-bottom: 40px;
 }
-body.locale-ja .experience-step {
+body:is(.locale-ja, .locale-en) .experience-step {
   padding-block: 56px;
 }
-body.locale-ja .experience-step .step-copy > p {
+body:is(.locale-ja, .locale-en) .experience-step .step-copy > p {
   margin-top: 18px;
 }
-body.locale-ja .experience-step .feature-list {
+body:is(.locale-ja, .locale-en) .experience-step .feature-list {
   margin-top: 22px;
 }
 @media (min-width: 901px) {
-  body.locale-ja .feature-card {
+  body:is(.locale-ja, .locale-en) .feature-card {
     min-height: 280px;
   }
 }
 @media (max-width: 900px) {
-  body.locale-ja .hero {
+  body:is(.locale-ja, .locale-en) .hero {
     padding-top: 50px;
   }
-  body.locale-ja .experience-step {
+  body:is(.locale-ja, .locale-en) .experience-step {
     gap: 36px;
   }
 }
 @media (max-width: 640px) {
-  body.locale-ja .hero {
+  body:is(.locale-ja, .locale-en) .hero {
     padding-top: 34px;
   }
-  body.locale-ja .section {
+  body:is(.locale-ja, .locale-en) .section {
     padding-block: 42px;
   }
-  body.locale-ja .section.ownership-section {
+  body:is(.locale-ja, .locale-en) .section.ownership-section {
     padding-top: 28px;
   }
-  body.locale-ja .hero-grid {
+  body:is(.locale-ja, .locale-en) .hero-grid {
     gap: 22px;
   }
-  body.locale-ja .section-heading {
+  body:is(.locale-ja, .locale-en) .section-heading {
     margin-bottom: 24px;
   }
-  body.locale-ja .feature-card .feature-icon {
+  body:is(.locale-ja, .locale-en) .feature-card .feature-icon {
     margin-bottom: 28px;
   }
-  body.locale-ja .experience-step {
+  body:is(.locale-ja, .locale-en) .experience-step {
     gap: 30px;
     padding-block: 44px;
   }

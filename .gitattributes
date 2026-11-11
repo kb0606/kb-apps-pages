@@ -24,3 +24,4 @@
 # ============================================================
 mita-mon/assets/** -filter -diff -merge -text
 yatta-mon/assets/common/app-icon.png -filter -diff -merge -text
+yatta-mon/assets/en/screens/** -filter -diff -merge -text
